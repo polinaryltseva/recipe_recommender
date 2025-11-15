@@ -6,6 +6,6 @@ system = EASERecommendationSystem()
 
 user_activity = ...  # Список List["str"]
 
-user_activity = ["Бекон", "Сыр", "Паста", "Соль", "Насвай"]
+user_activity = [446, 4188, 10124]
 recommendations = system.get_recommendations(user_activity, top_k=10)
 print(recommendations)
