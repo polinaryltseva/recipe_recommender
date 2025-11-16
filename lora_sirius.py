@@ -227,7 +227,7 @@ outputs = model_for_inference.generate(
     **inputs,
     max_new_tokens=128,
     do_sample=True,
-    temperature=0.7,
+    temperature=0.0,
     pad_token_id=tokenizer_for_inference.eos_token_id
 )
 
