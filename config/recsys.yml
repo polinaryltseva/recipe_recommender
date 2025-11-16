@@ -1,0 +1,7 @@
+experiments:
+  main_recsys_ab:
+    status: "running"
+    variants:
+      baseline_pop: 0.34
+      ease_v1: 0.33
+      sasrec_v1: 0.33

@@ -1,0 +1,3 @@
+-- Здесь можно держать описание схемы БД
+-- CREATE TABLE product (...);
+-- CREATE TABLE event (...);
