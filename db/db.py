@@ -342,7 +342,7 @@ def get_products_page(offset: int, limit: int) -> List[tuple]:
     with get_connection() as conn:
         cur = conn.cursor()
         cur.execute("""
-            SELECT id, name, price, category_id, image_url, description
+            SELECT id, name, price, category_id, image_url, description, metadata
             FROM product
             ORDER BY id
             LIMIT ? OFFSET ?
@@ -363,7 +363,7 @@ def get_products_by_ids(product_ids: List[int], preserve_order: bool = False) ->
 
     placeholders = ",".join("?" for _ in product_ids)
     query = f"""
-        SELECT id, name, price, category_id, image_url, description
+        SELECT id, name, price, category_id, image_url, description, metadata
         FROM product
         WHERE id IN ({placeholders})
     """

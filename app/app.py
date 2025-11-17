@@ -155,7 +155,6 @@ st.title("Лавка рекомендаций")
 
 
 # ================== РАБОТА С СЕССИЕЙ ==================
-
 def ensure_session():
     """
     Инициализирует состояние Streamlit:
@@ -276,6 +275,7 @@ def auth_block():
                 st.session_state.search_page = 1
                 st.sidebar.success("Регистрация успешна, вы вошли в систему.")
                 st.rerun()
+                return  # ---------------------------------------------------------------add
 
     # Вход
     if do_login:
@@ -312,6 +312,8 @@ def auth_block():
                         uid,
                         uname,
                     )
+                    st.rerun()  # ------------------------ add
+                    return  # ---------------------------- add
 
 
 auth_block()
@@ -415,6 +417,7 @@ def search_products_fuzzy(query: str, limit: int = 256):
 
 # ================== ПАГИНАЦИЯ ==================
 
+
 def pagination_controls(page: int, total_pages: int, total_products: int, position: str):
     """
     Пагинация для обычного каталога (использует st.session_state.page).
@@ -468,6 +471,7 @@ def render_product_card(
     description,
     user_id,
     session_id,
+    metadata=None,  # ------------------------ add
     page_type: str = "catalog",
     source: str = "catalog",
     position: int | None = None,      # номер товара в выдаче/блоке
@@ -485,6 +489,17 @@ def render_product_card(
     БЕЗ дополнительных запросов к БД - используем только то,
     что уже передано (name, description, image_url, price).
     """
+    product_url = None
+    if metadata:
+        try:
+            if isinstance(metadata, str):
+                meta_dict = json.loads(metadata)
+            else:
+                meta_dict = metadata  # уже dict
+            product_url = meta_dict.get("url")
+        except Exception:
+            pass
+
     full_name = name or ""
     full_description = description or ""
     composition = ""  # состав в этом варианте не тянем (для перформанса)
@@ -545,8 +560,24 @@ def render_product_card(
     if len(short_name) > max_len:
         short_name = short_name[: max_len - 1] + "…"
 
+    # st.markdown(
+    #     f'<div class="product-name">{short_name}</div>',
+    #     unsafe_allow_html=True,
+    # )
+
+    short_name = full_name
+    max_len = 40
+    if len(short_name) > max_len:
+        short_name = short_name[: max_len - 1] + "…"
+
+    # Если есть URL — делаем ссылкой, иначе обычный текст
+    if product_url:
+        name_html = f'<a href="{product_url}" target="_blank" style="color: inherit; text-decoration: none;">{short_name}</a>'
+    else:
+        name_html = short_name
+
     st.markdown(
-        f'<div class="product-name">{short_name}</div>',
+        f'<div class="product-name">{name_html}</div>',
         unsafe_allow_html=True,
     )
 
@@ -646,7 +677,7 @@ with main_col:
                 num_cols = 4
                 cols = st.columns(num_cols)
 
-                for idx, (pid, name, price, category_id, image_url, description) in enumerate(products):
+                for idx, (pid, name, price, category_id, image_url, description, metadata) in enumerate(products):
                     col = cols[idx % num_cols]
                     # глобальная позиция товара в текущем каталоге
                     global_pos = (page - 1) * page_size + idx + 1
@@ -659,6 +690,7 @@ with main_col:
                                 page_type="catalog",
                                 source="catalog",
                                 position=global_pos,
+                                metadata=metadata
                             )
 
                 pagination_controls(page, total_pages, total_products, position="bottom")
@@ -700,7 +732,7 @@ with main_col:
                     num_cols = 4
                     cols = st.columns(num_cols)
 
-                    for idx, (pid, name, price, category_id, image_url, description) in enumerate(page_items):
+                    for idx, (pid, name, price, category_id, image_url, description, metadata) in enumerate(page_items):
                         col = cols[idx % num_cols]
                         # позиция товара в общей поисковой выдаче
                         global_pos = (page - 1) * page_size + idx + 1
@@ -715,6 +747,7 @@ with main_col:
                                     position=global_pos,
                                     request_id=search_request_id,
                                     query=search_query,
+                                    metadata=metadata
                                 )
 
                     search_pagination_controls(page, total_pages, total_found, position="bottom")
@@ -746,14 +779,72 @@ with main_col:
                         if not prod:
                             continue
 
-                        _, name, price, category_id, image_url, description = prod
+                        _, name, price, category_id, image_url, description, metadata = prod
 
-                        col_name, col_qty, col_btn = st.columns([3, 1, 1])
-                        with col_name:
-                            st.write(f"**{name}**")
-                            st.caption(f"{price:.2f} ₽ за единицу")
+                        product_url = None
+                        if metadata:
+                            try:
+                                meta_dict = json.loads(metadata) if isinstance(metadata, str) else metadata
+                                product_url = meta_dict.get("url")
+                            except Exception:
+                                pass
+
+                                # Создаём строку с изображением и информацией
+                        col_img, col_info, col_qty, col_btn = st.columns([1, 2, 1, 1])
+
+                        with col_img:
+                            if image_url:
+                                st.markdown(
+                                    f"""
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 8px;
+                                        overflow: hidden;
+                                        background-color: #ffffff;
+                                        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                                    ">
+                                        <img src="{image_url}" style="
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        ">
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+                            else:
+                                st.markdown(
+                                    """
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 8px;
+                                        background-color: #f0f0f0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #888;
+                                        font-size: 0.8rem;
+                                    ">
+                                        Н/Д
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+
+                        with col_info:
+                            if product_url:
+                                name_html = f'<a href="{product_url}" target="_blank" style="color: inherit; text-decoration: none; font-weight: 600;">{name}</a>'
+                            else:
+                                name_html = f"<strong>{name}</strong>"
+
+                            st.markdown(name_html, unsafe_allow_html=True)
+                            st.caption(f"{price:.2f} ₽ за ед.")
+
                         with col_qty:
                             st.write(f"x {qty}")
+
                         with col_btn:
                             if st.button("−", key=f"remove_{pid}"):
                                 if cart[pid] > 1:
@@ -819,6 +910,7 @@ with main_col:
 
 with recs_col:
     with st.expander("Рекомендации для вас", expanded=True):
+
         if user_id is None:
             st.info("Рекомендации доступны после входа в аккаунт.")
         else:
@@ -869,10 +961,6 @@ with recs_col:
                     st.write("Не удалось получить рекомендации, попробуйте позже.")
                     rec_ids = []
 
-            # st.write("DEBUG user_id:", user_id)
-            # st.write("DEBUG cart_product_ids:", cart_product_ids)
-            # st.write("DEBUG rec_ids:", rec_ids)
-
             if not rec_ids:
                 st.write("Пока нет рекомендаций - нужно, чтобы накопились события.")
             else:
@@ -888,10 +976,99 @@ with recs_col:
                         list(missing),
                     )
 
-                # один request_id на весь показ набора рекомендаций
-                rec_request_id = uuid.uuid4().hex
+                # 💡 FIX: Создаём уникальный ключ корзины для сравнения
+                current_cart_key = str(sorted(cart_product_ids))  # стабильная строка
 
-                for pos, (pid, name, price, category_id, image_url, description) in enumerate(rec_products, start=1):
+                # 💡 FIX: Если корзина изменилась — сбрасываем request_id
+                if "last_cart_key" not in st.session_state:
+                    st.session_state.last_cart_key = current_cart_key
+                    st.session_state.current_rec_request_id = uuid.uuid4().hex
+                else:
+                    if st.session_state.last_cart_key != current_cart_key:
+                        # Корзина изменилась → новая выдача → новый request_id
+                        st.session_state.last_cart_key = current_cart_key
+                        st.session_state.current_rec_request_id = uuid.uuid4().hex
+                        # Опционально: можно сбросить состояния лайков, но они и так привязаны к новому ID
+                        # → будут автоматически False
+
+                rec_request_id = st.session_state.current_rec_request_id
+
+                # --- 👇👇👇 КНОПКИ ЛАЙК/ДИЗЛАЙК ДЛЯ ВСЕГО БЛОКА — ТЕПЕРЬ СВЕРХУ ---
+                st.markdown("#### Оцените рекомендации")
+                like_key = f"block_like_{rec_request_id}"
+                dislike_key = f"block_dislike_{rec_request_id}"
+
+                if like_key not in st.session_state:
+                    st.session_state[like_key] = False
+                if dislike_key not in st.session_state:
+                    st.session_state[dislike_key] = False
+
+                if st.session_state[like_key]:
+                    st.success("👍 Спасибо за вашу оценку!")
+                elif st.session_state[dislike_key]:
+                    st.error("👎 Спасибо за вашу оценку!")
+                else:
+                    # Показываем кнопки, только если ещё не оценили
+                    col_like, col_dislike = st.columns(2)
+
+                    with col_like:
+                        if st.button(
+                                "👍",
+                                key=f"btn_block_like_{rec_request_id}",
+                                help="Нравится этот блок рекомендаций?",
+                                use_container_width=True,
+                        ):
+                            log_ui_event(
+                                user_id=user_id,
+                                session_id=session_id,
+                                event_type="rec_block_like",
+                                page_type="recs_sidebar",
+                                source="recs",
+                                item_id=None,
+                                position=None,
+                                request_id=rec_request_id,
+                                cart=st.session_state.cart,
+                            )
+                            logger.info(
+                                "Rec block LIKE: user_id=%s, request_id=%s",
+                                user_id,
+                                rec_request_id,
+                            )
+                            st.session_state[like_key] = True
+                            st.session_state[dislike_key] = False
+                            st.rerun()
+
+                    with col_dislike:
+                        if st.button(
+                                "👎",
+                                key=f"btn_block_dislike_{rec_request_id}",
+                                help="Эти рекомендации не релевантны?",
+                                use_container_width=True,
+                        ):
+                            log_ui_event(
+                                user_id=user_id,
+                                session_id=session_id,
+                                event_type="rec_block_dislike",
+                                page_type="recs_sidebar",
+                                source="recs",
+                                item_id=None,
+                                position=None,
+                                request_id=rec_request_id,
+                                cart=st.session_state.cart,
+                            )
+                            logger.info(
+                                "Rec block DISLIKE: user_id=%s, request_id=%s",
+                                user_id,
+                                rec_request_id,
+                            )
+                            st.session_state[dislike_key] = True
+                            st.session_state[like_key] = False
+                            st.rerun()
+
+                st.markdown("---")  # разделитель между кнопками и товарами
+
+                # --- Теперь отрисовываем сами рекомендации ---
+                for pos, (pid, name, price, category_id, image_url, description, metadata) in enumerate(rec_products, start=1):
                     with st.container():
                         st.markdown('<div class="product-card">', unsafe_allow_html=True)
 
@@ -943,7 +1120,6 @@ with recs_col:
                             cart=st.session_state.cart,
                         )
 
-                        # LOG: дополнительно можно писать это и в тех.лог (если хочешь там видеть показы)
                         logger.debug(
                             "Rec impression: user_id=%s, item_id=%s, position=%s, request_id=%s",
                             user_id,
@@ -956,7 +1132,6 @@ with recs_col:
                         if st.button("В корзину", key=f"minirec_add_{pid}"):
                             st.session_state.cart[pid] = st.session_state.cart.get(pid, 0) + 1
 
-                            # Логируем клик по рекомендации
                             log_ui_event(
                                 user_id=user_id,
                                 session_id=session_id,
@@ -969,7 +1144,6 @@ with recs_col:
                                 cart=st.session_state.cart,
                             )
 
-                            # LOG: тех.лог про клик
                             logger.info(
                                 "Rec click: user_id=%s, item_id=%s, position=%s, request_id=%s",
                                 user_id,
