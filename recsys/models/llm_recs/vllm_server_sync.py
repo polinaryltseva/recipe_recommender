@@ -1,17 +1,18 @@
 import time
 import ast
+import threading
 
 from transformers import AutoTokenizer
 from vllm.engine.arg_utils import EngineArgs
 from vllm.engine.llm_engine import LLMEngine
 from vllm.sampling_params import SamplingParams
 from vllm.utils import random_uuid
-# tuned model path /home/recsys1_user01/recipe_recommender/llm_work/recipe_recommender/models/llm_recs
+# tuned model path Qwen/Qwen3-14b
 class vllm_recomender:
-    def __init__(self, model_path="Qwen/Qwen3-14b"):
+    def __init__(self, model_path="/home/recsys1_user01/recipe_recommender/llm_work/recipe_recommender/models/llm_recs"):
         self.model_path = model_path
         self.engine, self.tokenizer = self.initialize_model(model_path)
-
+        self.lock = threading.Lock() 
 
         self.SYSTEM_PROMPT = """/no_think Ты — ИИ-ассистент для системы продуктовых рекомендаций. Твоя задача — анализировать корзину и генерировать идеи для поиска недостающих для рецептов товаров в виде списка поисковых запросов."""
 
@@ -97,23 +98,23 @@ class vllm_recomender:
 
         sampling_params = SamplingParams(max_tokens=200, temperature=0.0)
         request_id = random_uuid()
-        
-        start_time = time.time()
-        
-        # ИСПРАВЛЕНИЕ: Передаем только prompt (строку), а не prompt_token_ids.
-        # Движок сам выполнит токенизацию.
-        self.engine.add_request(request_id, final_prompt, sampling_params)
-
-        final_output = []
-        while self.engine.has_unfinished_requests():
-            # Выполняем шаг генерации
-            request_outputs = self.engine.step()
+        with self.lock:
+            start_time = time.time()
             
-            # Проверяем завершенные на этом шаге запросы
-            for output in request_outputs:
-                if output.finished:
-                    final_output.append(output)
-        print(f"Время работы LLM: {time.time()-start_time:.2f} сек.")
+            # ИСПРАВЛЕНИЕ: Передаем только prompt (строку), а не prompt_token_ids.
+            # Движок сам выполнит токенизацию.
+            self.engine.add_request(request_id, final_prompt, sampling_params)
+
+            final_output = []
+            while self.engine.has_unfinished_requests():
+                # Выполняем шаг генерации
+                request_outputs = self.engine.step()
+                
+                # Проверяем завершенные на этом шаге запросы
+                for output in request_outputs:
+                    if output.finished:
+                        final_output.append(output)
+            print(f"Время работы LLM: {time.time()-start_time:.2f} сек.")
 
         if not final_output or not final_output[0].outputs:
             return ""
