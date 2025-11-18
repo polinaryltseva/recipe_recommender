@@ -29,11 +29,21 @@ def init_db():
         cur = conn.cursor()
 
         # ---------- USER ----------
+        # cur.execute("""
+        # CREATE TABLE IF NOT EXISTS user (
+        #     id            INTEGER PRIMARY KEY AUTOINCREMENT,
+        #     username      TEXT NOT NULL UNIQUE,
+        #     password_hash TEXT NOT NULL,
+        #     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP
+        # )
+        # """)
         cur.execute("""
         CREATE TABLE IF NOT EXISTS user (
             id            INTEGER PRIMARY KEY AUTOINCREMENT,
             username      TEXT NOT NULL UNIQUE,
             password_hash TEXT NOT NULL,
+            id_ab_group   INTEGER NOT NULL,
+            name_ab_group TEXT NOT NULL,
             created_at    DATETIME DEFAULT CURRENT_TIMESTAMP
         )
         """)
@@ -185,11 +195,27 @@ def init_db():
 
 def create_user(username: str, password_hash: str) -> int:
     """Создаёт пользователя и возвращает его id."""
+    # with get_connection() as conn:
+    #     cur = conn.cursor()
+    #     cur.execute(
+    #         "INSERT INTO user (username, password_hash) VALUES (?, ?)",
+    #         (username, password_hash),
+    #     )
+    #     conn.commit()
+    #     return cur.lastrowid
+
     with get_connection() as conn:
         cur = conn.cursor()
+
+        # Получаем максимальный id (если таблица пустая — вернёт None)
+        cur.execute("SELECT MAX(id) FROM user")
+        max_id = cur.fetchone()[0]  # может быть None
+
+        ab_bin = ((max_id or 0) + 1) % 2
+
         cur.execute(
-            "INSERT INTO user (username, password_hash) VALUES (?, ?)",
-            (username, password_hash),
+            "INSERT INTO user (username, password_hash, id_ab_group, name_ab_group) VALUES (?, ?, ?, ?)",
+            (username, password_hash, ab_bin, ("ease_popular" if ab_bin == 0 else "llm_recs")),
         )
         conn.commit()
         return cur.lastrowid
@@ -786,7 +812,7 @@ if __name__ == "__main__":
         BASE_DIR / "datasets" / f"base_table_categories_{VERSION}.csv"
     )
     seed_products_from_base_csv(
-        BASE_DIR / "datasets" / f"base_table_products_{VERSION}.csv"
+        BASE_DIR / "datasets" / f"base_table_products_v3_without_zero.csv"
     )
 
     print("DB инициализирована и заполнена из base_table_*.csv.")

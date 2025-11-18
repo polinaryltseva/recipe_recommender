@@ -99,7 +99,6 @@ class LLMMatcher:
         import pandas as pd
 
         pov_catalog_df = pd.DataFrame(pov_catalog)
-        ic(pov_catalog_df)
         cls._pov_searcher = WhooshCatalogMatcher(
             pov_catalog_df, id_col="id", text_col="name"
         )
@@ -308,11 +307,9 @@ class LLMMatcher:
                             "llm_queries": llm_queries,
                         }
                     )
-                ic(candidates)
             else:
                 # Secondary search in VV catalog using ingredient name
                 vv_results = self._vv_searcher.search(ingredient_name, limit=10)
-                ic(vv_results)
                 if not vv_results.empty:
                     for _, row in vv_results.iterrows():
                         vv_id = int(row["id"])
@@ -340,7 +337,6 @@ class LLMMatcher:
             Sorted list of candidates with rerank_score
         """
         enriched = []
-        ic(len(candidates))
         for candidate in candidates:
             pov_id = candidate["pov_id"]
             vv_id = candidate["vv_id"]
@@ -397,8 +393,6 @@ class LLMMatcher:
             List of VV product IDs
         """
         # Group by base ingredient (pov_id)
-        ic(reranked)
-        ic(len(reranked))
         grouped = {}
         for candidate in reranked:
             pov_id = candidate["pov_id"]
@@ -427,8 +421,6 @@ class LLMMatcher:
 
             for key in empty_keys:
                 grouped.pop(key, None)
-        ic(result)
-        ic(len(result))
         return result
 
     def _fill_with_popular(self, current_vv_ids: List[int], top_k: int) -> List[int]:

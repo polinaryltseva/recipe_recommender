@@ -952,7 +952,7 @@ with recs_col:
                 "variants": {
                     "ease_popular": 0.5,
                     "llm_recs": 0.5,
-                    "knn_recipes": 0
+                    # "knn_recipes": 0
                     # можно вывести 0.8 / 0.2 и т.п.
                 },
             }
@@ -1168,6 +1168,8 @@ with recs_col:
                                 item_id=pid,
                                 position=pos,
                                 request_id=rec_request_id,
+                                experiment_key=experiment_name,
+                                variant=variant,
                                 cart=st.session_state.cart,
                             )
 
@@ -1189,6 +1191,8 @@ with recs_col:
                                     item_id=pid,
                                     position=pos,
                                     request_id=rec_request_id,
+                                    experiment_key=experiment_name,
+                                    variant=variant,
                                     cart=st.session_state.cart,
                                 )
 

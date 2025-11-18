@@ -143,7 +143,6 @@ import pandas as pd
 from whoosh import scoring
 from whoosh.analysis import StemmingAnalyzer
 from whoosh.fields import ID, TEXT, Schema
-from icecream import ic
 from whoosh.filedb.filestore import RamStorage
 from whoosh.query import And, FuzzyTerm, Or, Term
 
@@ -194,34 +193,28 @@ class WhooshCatalogMatcher:
         3. Single-word matching (most specific word) - maximum recall
         """
         query = (query or "").strip()
-        print(f"QUERY: {query}")
         if not query:
             return self.df.head(0)
 
         terms = [token for token in query.lower().split() if token]
         if not terms:
             return self.df.head(0)
-        print(f"TERMS: {terms}")
 
         # Strategy 1: Strict AND matching (all terms must match)
         results = self._search_and(terms, limit)
         if not results.empty:
-            print("✓ AND match succeeded")
             return results
 
         # Strategy 2: OR matching (any term matches)
         results = self._search_or(terms, limit)
         if not results.empty:
-            print("✓ OR match succeeded")
             return results
 
         # Strategy 3: Single most-specific word (usually the last one)
         results = self._search_single_word(terms, limit)
         if not results.empty:
-            print("✓ Single-word match succeeded")
             return results
 
-        print("FALLBACK БЛЯТЬ - no matches found")
         return self.df.head(0)
 
     def _build_term_query(self, token: str) -> Or:
@@ -238,14 +231,12 @@ class WhooshCatalogMatcher:
         """Search requiring ALL terms to match."""
         subqueries = [self._build_term_query(token) for token in terms]
         whoosh_query = And(subqueries)
-        print(f"WHOOSH AND QUERY: {whoosh_query}")
         return self._execute_search(whoosh_query, limit)
 
     def _search_or(self, terms: List[str], limit: int) -> pd.DataFrame:
         """Search requiring ANY term to match."""
         subqueries = [self._build_term_query(token) for token in terms]
         whoosh_query = Or(subqueries)
-        print(f"WHOOSH OR QUERY: {whoosh_query}")
         return self._execute_search(whoosh_query, limit)
 
     def _search_single_word(self, terms: List[str], limit: int) -> pd.DataFrame:
@@ -261,10 +252,8 @@ class WhooshCatalogMatcher:
         """
         for token in reversed(terms):
             whoosh_query = self._build_term_query(token)
-            print(f"WHOOSH SINGLE-WORD QUERY: {whoosh_query} (token: '{token}')")
             results = self._execute_search(whoosh_query, limit)
             if not results.empty:
-                print(f"  → Found match with token: '{token}'")
                 return results
 
         return self.df.head(0)
@@ -278,7 +267,6 @@ class WhooshCatalogMatcher:
                 rows.append({"id": int(hit["id"]), "name": hit["name"]})
 
         if rows:
-            print(f"ROWS: {rows}")
             return pd.DataFrame(rows)
         else:
             return self.df.head(0)
