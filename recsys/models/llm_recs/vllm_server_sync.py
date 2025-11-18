@@ -119,7 +119,9 @@ class vllm_recomender:
         if not final_output or not final_output[0].outputs:
             return ""
         text = final_output[0].outputs[0].text
+        print("LLM OUTPUT: ", text)
         parsed_recs = self.parse_llm_response(text.strip())
+        print("PARSED LLM OUTPUT ", parsed_recs)
         return parsed_recs
 
 

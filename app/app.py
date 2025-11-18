@@ -950,9 +950,9 @@ with recs_col:
             DEFAULT_EXPERIMENT = {
                 "name": "main_recs_ab",
                 "variants": {
-                    "ease_popular": 1/3,
-                    "llm_recs": 1/3,
-                    "knn_recipes": 1/3
+                    "ease_popular": 0,
+                    "llm_recs": 1,
+                    "knn_recipes": 0
                     # можно вывести 0.8 / 0.2 и т.п.
                 },
             }
@@ -1004,7 +1004,7 @@ with recs_col:
             if not rec_ids:
                 st.write("Пока нет рекомендаций - нужно, чтобы накопились события.")
             else:
-                rec_products = get_products_by_ids(rec_ids)
+                rec_products = get_products_by_ids(rec_ids, preserve_order=True)
 
                 # LOG: проверим, все ли rec_ids есть в базе
                 db_product_ids = [p[0] for p in rec_products]

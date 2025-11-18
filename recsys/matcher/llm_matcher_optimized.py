@@ -9,6 +9,7 @@ from typing import Dict, List, Tuple
 from .ease_scorer import EaseOfflineScorer
 from .whoosh_matcher import WhooshCatalogMatcher
 from ..models.ease_popular.actual_popular import DbTopPopular
+from icecream import ic 
 
 
 
@@ -93,11 +94,12 @@ class LLMMatcher:
             {"id": pov_id, "name": ingredient_name}
             for pov_id, ingredient_name in cls._items_dict.items()
         ]
-
+        # ic()
         # Convert to simple format for Whoosh (pandas only used here for Whoosh compatibility)
         import pandas as pd
 
         pov_catalog_df = pd.DataFrame(pov_catalog)
+        ic(pov_catalog_df)
         cls._pov_searcher = WhooshCatalogMatcher(
             pov_catalog_df, id_col="id", text_col="name"
         )
@@ -197,6 +199,8 @@ class LLMMatcher:
         try:
             # Step 1: Map LLM outputs to POV IDs using Whoosh search
             pov_matches = self._map_llm_to_pov_ids(llm_outputs, per_query_limit=3)
+            print(pov_matches)
+            print( self._map_llm_to_pov_ids(llm_outputs, per_query_limit=top_k))
 
             if not pov_matches:
                 # Fallback to top popular
@@ -204,10 +208,8 @@ class LLMMatcher:
 
             # Step 2: Get EASE recommendations based on cart
             ease_scores = self._get_ease_scores(current_cart, pov_matches)
-
             # Step 3: Map POV IDs to VV product candidates
             vv_candidates = self._map_pov_to_vv_candidates(pov_matches)
-
             if not vv_candidates:
                 return self.TOP_POPULAR_VV_IDS[:top_k]
 
@@ -220,7 +222,6 @@ class LLMMatcher:
             # Step 6: Fill with top popular if needed
             if len(final_vv_ids) < top_k:
                 final_vv_ids = self._fill_with_popular(final_vv_ids, top_k)
-
             return final_vv_ids[:top_k]
 
         except Exception as e:
@@ -246,7 +247,6 @@ class LLMMatcher:
             results = self._pov_searcher.search(query, limit=per_query_limit)
             if results.empty:
                 continue
-
             for _, row in results.iterrows():
                 pov_id = int(row["id"])
                 ingredient_name = row["name"]
@@ -308,9 +308,11 @@ class LLMMatcher:
                             "llm_queries": llm_queries,
                         }
                     )
+                ic(candidates)
             else:
                 # Secondary search in VV catalog using ingredient name
                 vv_results = self._vv_searcher.search(ingredient_name, limit=10)
+                ic(vv_results)
                 if not vv_results.empty:
                     for _, row in vv_results.iterrows():
                         vv_id = int(row["id"])
@@ -338,6 +340,7 @@ class LLMMatcher:
             Sorted list of candidates with rerank_score
         """
         enriched = []
+        ic(len(candidates))
         for candidate in candidates:
             pov_id = candidate["pov_id"]
             vv_id = candidate["vv_id"]
@@ -383,6 +386,7 @@ class LLMMatcher:
 
         # Sort by rerank_score descending
         enriched.sort(key=lambda x: x["rerank_score"], reverse=True)
+        # len()
         return enriched
 
     def _diversify_and_select(self, reranked: List[Dict], top_k: int) -> List[int]:
@@ -393,6 +397,8 @@ class LLMMatcher:
             List of VV product IDs
         """
         # Group by base ingredient (pov_id)
+        ic(reranked)
+        ic(len(reranked))
         grouped = {}
         for candidate in reranked:
             pov_id = candidate["pov_id"]
@@ -421,7 +427,8 @@ class LLMMatcher:
 
             for key in empty_keys:
                 grouped.pop(key, None)
-
+        ic(result)
+        ic(len(result))
         return result
 
     def _fill_with_popular(self, current_vv_ids: List[int], top_k: int) -> List[int]:

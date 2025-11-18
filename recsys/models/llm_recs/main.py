@@ -19,7 +19,7 @@ class LLMWrapped:
             return []
         cart_str = "; ".join(names)
         llm_raw = self.model.get_recs(cart_str, user_id, k)
-        print(llm_raw)
         # TODO Apply 
-        
-        return self.out_ids.match_llm_output(llm_raw, input_idxs, top_k=k)
+        recs = self.out_ids.match_llm_output(llm_raw, input_idxs, top_k=k)
+        print("LLM WRAPPED RECS: ", recs)
+        return recs
