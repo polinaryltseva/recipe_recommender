@@ -630,7 +630,7 @@ def render_product_card(
 
 # ================== ОСНОВНОЙ ЛЕЙАУТ: ЛЕВО (ТАБЫ) + ПРАВО (РЕКОМЕНДАЦИИ) ==================
 
-main_col, recs_col = st.columns([4, 1])
+main_col, recs_col = st.columns([3, 2])
 
 with main_col:
     tab_catalog, tab_cart = st.tabs(["Каталог", "Корзина"])
@@ -917,7 +917,7 @@ with main_col:
                             )
 
                             st.session_state.cart = {}
-                            st.success(f"Заказ №{order_id} оформлен! 🎉 Лог записан.")
+                            st.success(f"Заказ №{order_id} оформлен!")
                         else:
                             st.warning("Не удалось сформировать заказ (корзина пустая).")
             except Exception:
@@ -1000,7 +1000,8 @@ with recs_col:
             # st.write("DEBUG user_id:", user_id)
             # st.write("DEBUG cart_product_ids:", cart_product_ids)
             # st.write("DEBUG rec_ids:", rec_ids)
-
+            if rec_ids:
+                rec_ids = list(dict.fromkeys(rec_ids))
             if not rec_ids:
                 st.write("Пока нет рекомендаций - нужно, чтобы накопились события.")
             else:
@@ -1113,102 +1114,90 @@ with recs_col:
 
                 # --- Теперь отрисовываем сами рекомендации ---
                 # Учитываем, что rec_products может содержать доп. metadata (как во второй версии)
-                for pos, prod in enumerate(rec_products, start=1):
-                    # Поддерживаем старый формат (6 полей) и новый (7+ полей)
-                    pid, name, price, category_id, image_url, description = prod[:6]
-                    metadata = prod[6] if len(prod) > 6 else None
+                rec_cols = st.columns(2)
 
-                    with st.container():
-                        st.markdown('<div class="product-card">', unsafe_allow_html=True)
+                for pos, product in enumerate(rec_products, start=1):
+                    pid, name, price, category_id, image_url, description = product
+                    col_idx = (pos - 1) % 2  # чередуем между 0 и 1
+                    with rec_cols[col_idx]:
+                        with st.container():
+                            st.markdown('<div class="product-card">', unsafe_allow_html=True)
 
-                        # Картинка товара
-                        if image_url:
-                            st.markdown(
-                                f"""
-                                <div class="product-media">
-                                    <img src="{image_url}" alt="{name}">
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
-                        else:
-                            st.markdown(
-                                """
-                                <div class="product-media">
-                                    <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;">
-                                        Нет изображения
+                            # Картинка товара
+                            if image_url:
+                                st.markdown(
+                                    f"""
+                                    <div class="product-media">
+                                        <img src="{image_url}" alt="{name}">
                                     </div>
-                                </div>
-                                """,
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+                            else:
+                                st.markdown(
+                                    """
+                                    <div class="product-media">
+                                        <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;">
+                                            Нет изображения
+                                        </div>
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+
+                            # Название
+                            short_name = name[:38] + "…" if len(name or "") > 40 else (name or "")
+                            st.markdown(
+                                f'<div class="product-name">{short_name}</div>',
                                 unsafe_allow_html=True,
                             )
 
-                        # Название (обрезаем до ~2 строк)
-                        short_name = name[:38] + "…" if len(name or "") > 40 else (name or "")
-                        st.markdown(
-                            f'<div class="product-name">{short_name}</div>',
-                            unsafe_allow_html=True,
-                        )
+                            # Цена
+                            st.markdown(
+                                f'<div class="product-price">{price:.2f} ₽</div>',
+                                unsafe_allow_html=True,
+                            )
 
-                        # Цена
-                        st.markdown(
-                            f'<div class="product-price">{price:.2f} ₽</div>',
-                            unsafe_allow_html=True,
-                        )
-
-                        # Логируем показ рекомендации с её позицией
-                        log_ui_event(
-                            user_id=user_id,
-                            session_id=session_id,
-                            event_type="rec_impression",
-                            page_type="recs_sidebar",
-                            source="recs",
-                            item_id=pid,
-                            position=pos,
-                            request_id=rec_request_id,
-                            experiment_key=experiment_name,
-                            variant=variant,
-                            cart=st.session_state.cart,
-                        )
-
-                        # LOG: дополнительно можно писать это и в тех.лог (если хочешь там видеть показы)
-                        logger.debug(
-                            "Rec impression: user_id=%s, item_id=%s, position=%s, request_id=%s",
-                            user_id,
-                            pid,
-                            pos,
-                            rec_request_id,
-                        )
-
-                        # Кнопка "В корзину"
-                        if st.button("В корзину", key=f"minirec_add_{pid}"):
-                            st.session_state.cart[pid] = st.session_state.cart.get(pid, 0) + 1
-
-                            # Логируем клик по рекомендации
+                            # Лог показа
                             log_ui_event(
                                 user_id=user_id,
                                 session_id=session_id,
-                                event_type="rec_click",
+                                event_type="rec_impression",
                                 page_type="recs_sidebar",
                                 source="recs",
                                 item_id=pid,
                                 position=pos,
                                 request_id=rec_request_id,
-                                experiment_key=experiment_name,
-                                variant=variant,
                                 cart=st.session_state.cart,
                             )
 
-                            # LOG: тех.лог про клик
-                            logger.info(
-                                "Rec click: user_id=%s, item_id=%s, position=%s, request_id=%s",
-                                user_id,
-                                pid,
-                                pos,
-                                rec_request_id,
+                            logger.debug(
+                                "Rec impression: user_id=%s, item_id=%s, position=%s, request_id=%s",
+                                user_id, pid, pos, rec_request_id,
                             )
 
-                            st.session_state.show_add_toast = True
-                            st.rerun()
+                            # Кнопка "В корзину"
+                            if st.button("В корзину", key=f"minirec_add_{pid}"):
+                                st.session_state.cart[pid] = st.session_state.cart.get(pid, 0) + 1
 
-                        st.markdown("</div>", unsafe_allow_html=True)
+                                log_ui_event(
+                                    user_id=user_id,
+                                    session_id=session_id,
+                                    event_type="rec_click",
+                                    page_type="recs_sidebar",
+                                    source="recs",
+                                    item_id=pid,
+                                    position=pos,
+                                    request_id=rec_request_id,
+                                    cart=st.session_state.cart,
+                                )
+
+                                logger.info(
+                                    "Rec click: user_id=%s, item_id=%s, position=%s, request_id=%s",
+                                    user_id, pid, pos, rec_request_id,
+                                )
+
+                                st.session_state.show_add_toast = True
+                                st.rerun()
+
+                            st.markdown("</div>", unsafe_allow_html=True)

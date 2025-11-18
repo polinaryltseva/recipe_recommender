@@ -279,7 +279,6 @@ class WhooshCatalogMatcher:
 
         if rows:
             print(f"ROWS: {rows}")
-            ic(pd.DataFrame(rows))
             return pd.DataFrame(rows)
         else:
             return self.df.head(0)
