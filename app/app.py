@@ -65,7 +65,7 @@ from recsys.features import build_user_context
 init_db()
 
 # Настройка страницы Streamlit
-st.set_page_config(page_title="Мини-Лавка", layout="wide")
+st.set_page_config(page_title="Докупер", layout="wide")
 
 # Глобальный CSS для карточек и сетки
 st.markdown(
@@ -151,7 +151,7 @@ button[kind="secondary"] {
 )
 
 
-st.title("Лавка рекомендаций")
+st.title("Докупер: не тупи, докупи!")
 
 
 # ================== РАБОТА С СЕССИЕЙ ==================
