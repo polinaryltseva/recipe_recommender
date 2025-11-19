@@ -12,3 +12,7 @@ db/*.db
 data/raw/
 data/processed/
 *.pkl
+llm_work/recipe_recommender/models/llm_recs
+*.safetensors
+*.jinja
+myenv/

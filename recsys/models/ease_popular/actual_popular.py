@@ -5,6 +5,7 @@ from db import get_connection
 
 
 class DbTopPopular:
+    """НУ какой-то код"""
     def __init__(self, k):
         self.k = k
 

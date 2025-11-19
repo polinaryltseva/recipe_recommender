@@ -1,0 +1,5876 @@
+[
+  {
+    "row_index": 0,
+    "ingredient": "Икра овощная",
+    "pov_id": "636",
+    "vv_id": "10274"
+  },
+  {
+    "row_index": 3,
+    "ingredient": "Лимонник",
+    "pov_id": "537",
+    "vv_id": "52"
+  },
+  {
+    "row_index": 4,
+    "ingredient": "Перец болгарский красный",
+    "pov_id": "248",
+    "vv_id": "6313"
+  },
+  {
+    "row_index": 7,
+    "ingredient": "Мясо",
+    "pov_id": "146",
+    "vv_id": "5123"
+  },
+  {
+    "row_index": 10,
+    "ingredient": "Пахта",
+    "pov_id": "511",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 11,
+    "ingredient": "Мисо-паста",
+    "pov_id": "737",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 14,
+    "ingredient": "Майоран",
+    "pov_id": "157",
+    "vv_id": "4632"
+  },
+  {
+    "row_index": 17,
+    "ingredient": "Лаваш тонкий",
+    "pov_id": "792",
+    "vv_id": "4022"
+  },
+  {
+    "row_index": 20,
+    "ingredient": "Снеки",
+    "pov_id": "863",
+    "vv_id": "8098"
+  },
+  {
+    "row_index": 23,
+    "ingredient": "Полба",
+    "pov_id": "612",
+    "vv_id": "3834"
+  },
+  {
+    "row_index": 26,
+    "ingredient": "Свити",
+    "pov_id": "841",
+    "vv_id": "8692"
+  },
+  {
+    "row_index": 29,
+    "ingredient": "Ванильный сахар",
+    "pov_id": "66",
+    "vv_id": "7186"
+  },
+  {
+    "row_index": 32,
+    "ingredient": "Кунжут",
+    "pov_id": "210",
+    "vv_id": "3879"
+  },
+  {
+    "row_index": 35,
+    "ingredient": "Анчоусы",
+    "pov_id": "229",
+    "vv_id": "260"
+  },
+  {
+    "row_index": 36,
+    "ingredient": "Печень говяжья",
+    "pov_id": "200",
+    "vv_id": "5987"
+  },
+  {
+    "row_index": 39,
+    "ingredient": "Белый хлеб",
+    "pov_id": "924",
+    "vv_id": "2744"
+  },
+  {
+    "row_index": 42,
+    "ingredient": "Почки",
+    "pov_id": "765",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 43,
+    "ingredient": "Нектар",
+    "pov_id": "830",
+    "vv_id": "5533"
+  },
+  {
+    "row_index": 46,
+    "ingredient": "Душица",
+    "pov_id": "672",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 47,
+    "ingredient": "Специи",
+    "pov_id": "48",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 48,
+    "ingredient": "Фарш",
+    "pov_id": "181",
+    "vv_id": "1528"
+  },
+  {
+    "row_index": 51,
+    "ingredient": "Пиво светлое",
+    "pov_id": "168",
+    "vv_id": "6637"
+  },
+  {
+    "row_index": 54,
+    "ingredient": "Пеленгас",
+    "pov_id": "760",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 55,
+    "ingredient": "Маракуйя",
+    "pov_id": "797",
+    "vv_id": "4421"
+  },
+  {
+    "row_index": 58,
+    "ingredient": "Сироп ананасовый",
+    "pov_id": "456",
+    "vv_id": "8117"
+  },
+  {
+    "row_index": 61,
+    "ingredient": "Мясо куриное",
+    "pov_id": "901",
+    "vv_id": "10124"
+  },
+  {
+    "row_index": 64,
+    "ingredient": "Хурма",
+    "pov_id": "647",
+    "vv_id": "2867"
+  },
+  {
+    "row_index": 67,
+    "ingredient": "Матча",
+    "pov_id": "596",
+    "vv_id": "4611"
+  },
+  {
+    "row_index": 70,
+    "ingredient": "Персик",
+    "pov_id": "488",
+    "vv_id": "5531"
+  },
+  {
+    "row_index": 73,
+    "ingredient": "Зайчатина",
+    "pov_id": "777",
+    "vv_id": "151"
+  },
+  {
+    "row_index": 74,
+    "ingredient": "Экстракт",
+    "pov_id": "466",
+    "vv_id": "1456"
+  },
+  {
+    "row_index": 77,
+    "ingredient": "Икра черная",
+    "pov_id": "587",
+    "vv_id": "1031"
+  },
+  {
+    "row_index": 80,
+    "ingredient": "Бекмес",
+    "pov_id": "947",
+    "vv_id": "259"
+  },
+  {
+    "row_index": 81,
+    "ingredient": "Капуста кудрявая",
+    "pov_id": "897",
+    "vv_id": "2352"
+  },
+  {
+    "row_index": 84,
+    "ingredient": "Сироп кленовый",
+    "pov_id": "32",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 87,
+    "ingredient": "Тархун",
+    "pov_id": "370",
+    "vv_id": "4114"
+  },
+  {
+    "row_index": 90,
+    "ingredient": "Лечо",
+    "pov_id": "667",
+    "vv_id": "4046"
+  },
+  {
+    "row_index": 93,
+    "ingredient": "Соль",
+    "pov_id": null,
+    "vv_id": "1704"
+  },
+  {
+    "row_index": 96,
+    "ingredient": "Брусника",
+    "pov_id": "321",
+    "vv_id": "741"
+  },
+  {
+    "row_index": 99,
+    "ingredient": "Голубика",
+    "pov_id": "732",
+    "vv_id": "1856"
+  },
+  {
+    "row_index": 102,
+    "ingredient": "Орехи толченые",
+    "pov_id": "959",
+    "vv_id": "5736"
+  },
+  {
+    "row_index": 105,
+    "ingredient": "Уцхо-сунели",
+    "pov_id": "308",
+    "vv_id": "6908"
+  },
+  {
+    "row_index": 108,
+    "ingredient": "Сироп инвертный",
+    "pov_id": "715",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 111,
+    "ingredient": "Ананас",
+    "pov_id": "127",
+    "vv_id": "24"
+  },
+  {
+    "row_index": 114,
+    "ingredient": "Сыр плавленый",
+    "pov_id": "132",
+    "vv_id": "8883"
+  },
+  {
+    "row_index": 117,
+    "ingredient": "Саго",
+    "pov_id": "878",
+    "vv_id": "227"
+  },
+  {
+    "row_index": 118,
+    "ingredient": "Белок яичный",
+    "pov_id": "162",
+    "vv_id": "455"
+  },
+  {
+    "row_index": 121,
+    "ingredient": "Виноград",
+    "pov_id": "274",
+    "vv_id": "9900"
+  },
+  {
+    "row_index": 124,
+    "ingredient": "Маринад",
+    "pov_id": "433",
+    "vv_id": "8427"
+  },
+  {
+    "row_index": 127,
+    "ingredient": "Пита",
+    "pov_id": "467",
+    "vv_id": "6554"
+  },
+  {
+    "row_index": 130,
+    "ingredient": "Порошок горчичный",
+    "pov_id": "547",
+    "vv_id": "2279"
+  },
+  {
+    "row_index": 133,
+    "ingredient": "Цедра грейпфрута",
+    "pov_id": "605",
+    "vv_id": "4116"
+  },
+  {
+    "row_index": 136,
+    "ingredient": "Заменитель сахара",
+    "pov_id": "621",
+    "vv_id": "224"
+  },
+  {
+    "row_index": 139,
+    "ingredient": "Гребешок",
+    "pov_id": "462",
+    "vv_id": "1984"
+  },
+  {
+    "row_index": 142,
+    "ingredient": "Кориандр",
+    "pov_id": "84",
+    "vv_id": "3497"
+  },
+  {
+    "row_index": 145,
+    "ingredient": "Перец болгарский зеленый",
+    "pov_id": "576",
+    "vv_id": "6315"
+  },
+  {
+    "row_index": 148,
+    "ingredient": "Шампанское",
+    "pov_id": "695",
+    "vv_id": "7529"
+  },
+  {
+    "row_index": 151,
+    "ingredient": "Тунец",
+    "pov_id": "198",
+    "vv_id": "9417"
+  },
+  {
+    "row_index": 154,
+    "ingredient": "Крошка вафельная",
+    "pov_id": "676",
+    "vv_id": "9391"
+  },
+  {
+    "row_index": 157,
+    "ingredient": "Яблочный сок",
+    "pov_id": "955",
+    "vv_id": "8217"
+  },
+  {
+    "row_index": 160,
+    "ingredient": "Масло кукурузное",
+    "pov_id": "382",
+    "vv_id": "4520"
+  },
+  {
+    "row_index": 163,
+    "ingredient": "Соус устричный",
+    "pov_id": "458",
+    "vv_id": "8481"
+  },
+  {
+    "row_index": 166,
+    "ingredient": "Тмин",
+    "pov_id": "318",
+    "vv_id": "9167"
+  },
+  {
+    "row_index": 169,
+    "ingredient": "Соус майонезный",
+    "pov_id": "571",
+    "vv_id": "8431"
+  },
+  {
+    "row_index": 172,
+    "ingredient": "Ливер",
+    "pov_id": "876",
+    "vv_id": "52"
+  },
+  {
+    "row_index": 173,
+    "ingredient": "Помидор",
+    "pov_id": "11",
+    "vv_id": "8410"
+  },
+  {
+    "row_index": 176,
+    "ingredient": "Ботва",
+    "pov_id": "657",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 177,
+    "ingredient": "Вафли",
+    "pov_id": "460",
+    "vv_id": "9688"
+  },
+  {
+    "row_index": 180,
+    "ingredient": "Молоко соевое",
+    "pov_id": "740",
+    "vv_id": "4862"
+  },
+  {
+    "row_index": 183,
+    "ingredient": "Батат",
+    "pov_id": "582",
+    "vv_id": "275"
+  },
+  {
+    "row_index": 186,
+    "ingredient": "Халва",
+    "pov_id": "276",
+    "vv_id": "2646"
+  },
+  {
+    "row_index": 189,
+    "ingredient": "Масло кунжутное",
+    "pov_id": "217",
+    "vv_id": "4521"
+  },
+  {
+    "row_index": 192,
+    "ingredient": "Сыр адыгейский",
+    "pov_id": "454",
+    "vv_id": "8693"
+  },
+  {
+    "row_index": 195,
+    "ingredient": "Розмарин",
+    "pov_id": "180",
+    "vv_id": "7122"
+  },
+  {
+    "row_index": 198,
+    "ingredient": "Смесь перцев",
+    "pov_id": "104",
+    "vv_id": "7934"
+  },
+  {
+    "row_index": 201,
+    "ingredient": "Коньяк",
+    "pov_id": "208",
+    "vv_id": "148"
+  },
+  {
+    "row_index": 202,
+    "ingredient": "Рисовая бумага",
+    "pov_id": "301",
+    "vv_id": "7075"
+  },
+  {
+    "row_index": 205,
+    "ingredient": "Грудка индюшки",
+    "pov_id": "620",
+    "vv_id": "2063"
+  },
+  {
+    "row_index": 208,
+    "ingredient": "Сумах",
+    "pov_id": "674",
+    "vv_id": "8567"
+  },
+  {
+    "row_index": 211,
+    "ingredient": "Грецкий орех",
+    "pov_id": "191",
+    "vv_id": "5729"
+  },
+  {
+    "row_index": 214,
+    "ingredient": "Мангостин",
+    "pov_id": "946",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 215,
+    "ingredient": "Черная смородина",
+    "pov_id": "813",
+    "vv_id": "1031"
+  },
+  {
+    "row_index": 218,
+    "ingredient": "Рубец говяжий",
+    "pov_id": "822",
+    "vv_id": "488"
+  },
+  {
+    "row_index": 221,
+    "ingredient": "Семечки тыквенные",
+    "pov_id": "178",
+    "vv_id": "7424"
+  },
+  {
+    "row_index": 224,
+    "ingredient": "Сайра",
+    "pov_id": "377",
+    "vv_id": "7369"
+  },
+  {
+    "row_index": 227,
+    "ingredient": "Морковь",
+    "pov_id": "39",
+    "vv_id": "4872"
+  },
+  {
+    "row_index": 230,
+    "ingredient": "Утка",
+    "pov_id": "148",
+    "vv_id": "5878"
+  },
+  {
+    "row_index": 233,
+    "ingredient": "Паприка сладкая",
+    "pov_id": "81",
+    "vv_id": "6812"
+  },
+  {
+    "row_index": 236,
+    "ingredient": "Мастика",
+    "pov_id": "506",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 237,
+    "ingredient": "Сыр колбасный",
+    "pov_id": "290",
+    "vv_id": "8872"
+  },
+  {
+    "row_index": 240,
+    "ingredient": "Укроп",
+    "pov_id": "145",
+    "vv_id": "9604"
+  },
+  {
+    "row_index": 243,
+    "ingredient": "Фруктоза",
+    "pov_id": "610",
+    "vv_id": "77"
+  },
+  {
+    "row_index": 244,
+    "ingredient": "Глюкоза",
+    "pov_id": "637",
+    "vv_id": "146"
+  },
+  {
+    "row_index": 245,
+    "ingredient": "Цесарка",
+    "pov_id": "680",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 246,
+    "ingredient": "Сахар коричневый",
+    "pov_id": "150",
+    "vv_id": "7189"
+  },
+  {
+    "row_index": 249,
+    "ingredient": "Кондитерское изделие",
+    "pov_id": "688",
+    "vv_id": "2230"
+  },
+  {
+    "row_index": 252,
+    "ingredient": "Мука блинная",
+    "pov_id": "415",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 255,
+    "ingredient": "Лук репчатый",
+    "pov_id": "10",
+    "vv_id": "4188"
+  },
+  {
+    "row_index": 258,
+    "ingredient": "Сироп ягодный",
+    "pov_id": "495",
+    "vv_id": "5047"
+  },
+  {
+    "row_index": 261,
+    "ingredient": "Филе рыбное",
+    "pov_id": "299",
+    "vv_id": "5740"
+  },
+  {
+    "row_index": 264,
+    "ingredient": "Черемуха",
+    "pov_id": "287",
+    "vv_id": "9"
+  },
+  {
+    "row_index": 265,
+    "ingredient": "Фасоль консервированная",
+    "pov_id": "309",
+    "vv_id": "1536"
+  },
+  {
+    "row_index": 268,
+    "ingredient": "Ассорти мясное",
+    "pov_id": "692",
+    "vv_id": "4212"
+  },
+  {
+    "row_index": 271,
+    "ingredient": "Урюк",
+    "pov_id": "729",
+    "vv_id": "79"
+  },
+  {
+    "row_index": 272,
+    "ingredient": "Раки",
+    "pov_id": "542",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 273,
+    "ingredient": "Асафетида",
+    "pov_id": "972",
+    "vv_id": "187"
+  },
+  {
+    "row_index": 274,
+    "ingredient": "Сок гранатовый",
+    "pov_id": "589",
+    "vv_id": "8154"
+  },
+  {
+    "row_index": 277,
+    "ingredient": "Тандури масала",
+    "pov_id": "661",
+    "vv_id": "6827"
+  },
+  {
+    "row_index": 280,
+    "ingredient": "Компот",
+    "pov_id": "591",
+    "vv_id": "3355"
+  },
+  {
+    "row_index": 283,
+    "ingredient": "Хлебобулочные изделия",
+    "pov_id": "624",
+    "vv_id": "4264"
+  },
+  {
+    "row_index": 286,
+    "ingredient": "Паста кунжутная",
+    "pov_id": "434",
+    "vv_id": "5938"
+  },
+  {
+    "row_index": 289,
+    "ingredient": "Сливки кокосовые",
+    "pov_id": "858",
+    "vv_id": "3096"
+  },
+  {
+    "row_index": 292,
+    "ingredient": "Крекер",
+    "pov_id": "194",
+    "vv_id": "3678"
+  },
+  {
+    "row_index": 295,
+    "ingredient": "Телятина",
+    "pov_id": "397",
+    "vv_id": "9137"
+  },
+  {
+    "row_index": 298,
+    "ingredient": "Кальмар",
+    "pov_id": "134",
+    "vv_id": "2294"
+  },
+  {
+    "row_index": 301,
+    "ingredient": "Чипсы",
+    "pov_id": "410",
+    "vv_id": "1166"
+  },
+  {
+    "row_index": 304,
+    "ingredient": "Клементин",
+    "pov_id": "845",
+    "vv_id": "4388"
+  },
+  {
+    "row_index": 307,
+    "ingredient": "Детское питание",
+    "pov_id": "388",
+    "vv_id": "6025"
+  },
+  {
+    "row_index": 310,
+    "ingredient": "Скумбрия",
+    "pov_id": "403",
+    "vv_id": "7841"
+  },
+  {
+    "row_index": 313,
+    "ingredient": "Эклеры",
+    "pov_id": "716",
+    "vv_id": "1454"
+  },
+  {
+    "row_index": 316,
+    "ingredient": "Огурец маринованный",
+    "pov_id": "115",
+    "vv_id": "6310"
+  },
+  {
+    "row_index": 319,
+    "ingredient": "Белорыбица",
+    "pov_id": "648",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 320,
+    "ingredient": "Краб",
+    "pov_id": "817",
+    "vv_id": "3663"
+  },
+  {
+    "row_index": 323,
+    "ingredient": "Гвоздика",
+    "pov_id": "23",
+    "vv_id": "2087"
+  },
+  {
+    "row_index": 326,
+    "ingredient": "Семечки",
+    "pov_id": "505",
+    "vv_id": "7409"
+  },
+  {
+    "row_index": 329,
+    "ingredient": "Эссенция",
+    "pov_id": "307",
+    "vv_id": "112"
+  },
+  {
+    "row_index": 330,
+    "ingredient": "Окунь морской",
+    "pov_id": "598",
+    "vv_id": "5625"
+  },
+  {
+    "row_index": 333,
+    "ingredient": "Кресс-салат",
+    "pov_id": "679",
+    "vv_id": "7249"
+  },
+  {
+    "row_index": 336,
+    "ingredient": "Масло рапсовое",
+    "pov_id": "512",
+    "vv_id": "4564"
+  },
+  {
+    "row_index": 339,
+    "ingredient": "Руккола",
+    "pov_id": "235",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 340,
+    "ingredient": "Корица",
+    "pov_id": "22",
+    "vv_id": "3503"
+  },
+  {
+    "row_index": 343,
+    "ingredient": "Навага",
+    "pov_id": "753",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 344,
+    "ingredient": "Перепел",
+    "pov_id": "340",
+    "vv_id": "51"
+  },
+  {
+    "row_index": 345,
+    "ingredient": "Аджика",
+    "pov_id": "508",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 348,
+    "ingredient": "Молоки рыбные",
+    "pov_id": "820",
+    "vv_id": "6265"
+  },
+  {
+    "row_index": 351,
+    "ingredient": "Овес",
+    "pov_id": "478",
+    "vv_id": "129"
+  },
+  {
+    "row_index": 352,
+    "ingredient": "Тыква",
+    "pov_id": "25",
+    "vv_id": "9582"
+  },
+  {
+    "row_index": 355,
+    "ingredient": "Крошка хлебная",
+    "pov_id": "285",
+    "vv_id": "9146"
+  },
+  {
+    "row_index": 358,
+    "ingredient": "Мандарин",
+    "pov_id": "57",
+    "vv_id": "10421"
+  },
+  {
+    "row_index": 361,
+    "ingredient": "Булка",
+    "pov_id": "255",
+    "vv_id": "79"
+  },
+  {
+    "row_index": 362,
+    "ingredient": "Нут",
+    "pov_id": "171",
+    "vv_id": "5554"
+  },
+  {
+    "row_index": 365,
+    "ingredient": "Морская капуста",
+    "pov_id": "940",
+    "vv_id": "5060"
+  },
+  {
+    "row_index": 368,
+    "ingredient": "Рис коричневый",
+    "pov_id": "604",
+    "vv_id": "7031"
+  },
+  {
+    "row_index": 371,
+    "ingredient": "Сода гашеная уксусом",
+    "pov_id": null,
+    "vv_id": "8114"
+  },
+  {
+    "row_index": 374,
+    "ingredient": "Паста ореховая",
+    "pov_id": "689",
+    "vv_id": "5738"
+  },
+  {
+    "row_index": 377,
+    "ingredient": "Фризе",
+    "pov_id": "870",
+    "vv_id": "4700"
+  },
+  {
+    "row_index": 380,
+    "ingredient": "Текила",
+    "pov_id": "633",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 381,
+    "ingredient": "Хамон",
+    "pov_id": "885",
+    "vv_id": "5615"
+  },
+  {
+    "row_index": 384,
+    "ingredient": "Паста сахарная",
+    "pov_id": "595",
+    "vv_id": "5938"
+  },
+  {
+    "row_index": 387,
+    "ingredient": "Мука гороховая",
+    "pov_id": "918",
+    "vv_id": "5094"
+  },
+  {
+    "row_index": 390,
+    "ingredient": "Масло виноградной косточки",
+    "pov_id": "581",
+    "vv_id": "9899"
+  },
+  {
+    "row_index": 393,
+    "ingredient": "Кумкват",
+    "pov_id": "611",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 394,
+    "ingredient": "Тушенка",
+    "pov_id": "513",
+    "vv_id": "79"
+  },
+  {
+    "row_index": 395,
+    "ingredient": "Семена",
+    "pov_id": "131",
+    "vv_id": "7428"
+  },
+  {
+    "row_index": 398,
+    "ingredient": "Повидло",
+    "pov_id": "302",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 399,
+    "ingredient": "Романо",
+    "pov_id": "352",
+    "vv_id": "7280"
+  },
+  {
+    "row_index": 402,
+    "ingredient": "Лепешка",
+    "pov_id": "364",
+    "vv_id": "4072"
+  },
+  {
+    "row_index": 405,
+    "ingredient": "Полуфабрикаты",
+    "pov_id": "916",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 406,
+    "ingredient": "Мука кукурузная",
+    "pov_id": "315",
+    "vv_id": "5081"
+  },
+  {
+    "row_index": 409,
+    "ingredient": "варенье",
+    "pov_id": "961",
+    "vv_id": "9755"
+  },
+  {
+    "row_index": 412,
+    "ingredient": "Цедра лимона",
+    "pov_id": "232",
+    "vv_id": "921"
+  },
+  {
+    "row_index": 415,
+    "ingredient": "Сыр сливочный",
+    "pov_id": "99",
+    "vv_id": "8941"
+  },
+  {
+    "row_index": 418,
+    "ingredient": "Банан",
+    "pov_id": "101",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 421,
+    "ingredient": "Рябина красная",
+    "pov_id": "700",
+    "vv_id": "1024"
+  },
+  {
+    "row_index": 424,
+    "ingredient": "Лук красный",
+    "pov_id": "80",
+    "vv_id": "4185"
+  },
+  {
+    "row_index": 427,
+    "ingredient": "Булочка",
+    "pov_id": "395",
+    "vv_id": "774"
+  },
+  {
+    "row_index": 430,
+    "ingredient": "Кислота аскорбиновая",
+    "pov_id": "847",
+    "vv_id": "2931"
+  },
+  {
+    "row_index": 433,
+    "ingredient": "Квас",
+    "pov_id": "556",
+    "vv_id": "3941"
+  },
+  {
+    "row_index": 436,
+    "ingredient": "Рикотта",
+    "pov_id": "465",
+    "vv_id": "8916"
+  },
+  {
+    "row_index": 439,
+    "ingredient": "Глутамат натрия",
+    "pov_id": "704",
+    "vv_id": "8246"
+  },
+  {
+    "row_index": 442,
+    "ingredient": "Хлопья панировочные",
+    "pov_id": "802",
+    "vv_id": "2821"
+  },
+  {
+    "row_index": 445,
+    "ingredient": "Шоколад темный",
+    "pov_id": "95",
+    "vv_id": "7754"
+  },
+  {
+    "row_index": 448,
+    "ingredient": "Фасоль",
+    "pov_id": "63",
+    "vv_id": "1536"
+  },
+  {
+    "row_index": 451,
+    "ingredient": "Кумин",
+    "pov_id": "83",
+    "vv_id": "3877"
+  },
+  {
+    "row_index": 454,
+    "ingredient": "Грибы",
+    "pov_id": "43",
+    "vv_id": "2049"
+  },
+  {
+    "row_index": 457,
+    "ingredient": "Тесто слоеное",
+    "pov_id": "304",
+    "vv_id": "9158"
+  },
+  {
+    "row_index": 460,
+    "ingredient": "Сердечки куриные",
+    "pov_id": "361",
+    "vv_id": "5204"
+  },
+  {
+    "row_index": 463,
+    "ingredient": "Капуста краснокочанная",
+    "pov_id": "497",
+    "vv_id": "2351"
+  },
+  {
+    "row_index": 466,
+    "ingredient": "Кальмар очищенный",
+    "pov_id": "939",
+    "vv_id": "2294"
+  },
+  {
+    "row_index": 469,
+    "ingredient": "Мука овсяная",
+    "pov_id": "204",
+    "vv_id": "5085"
+  },
+  {
+    "row_index": 472,
+    "ingredient": "Лепестки",
+    "pov_id": "492",
+    "vv_id": "4718"
+  },
+  {
+    "row_index": 475,
+    "ingredient": "Посыпка кондитерская",
+    "pov_id": "187",
+    "vv_id": "6786"
+  },
+  {
+    "row_index": 478,
+    "ingredient": "Сыворотка",
+    "pov_id": "243",
+    "vv_id": "9092"
+  },
+  {
+    "row_index": 481,
+    "ingredient": "Цедра мандарина",
+    "pov_id": "363",
+    "vv_id": "9741"
+  },
+  {
+    "row_index": 484,
+    "ingredient": "Брокколи",
+    "pov_id": "133",
+    "vv_id": "733"
+  },
+  {
+    "row_index": 487,
+    "ingredient": "Чай черный",
+    "pov_id": "223",
+    "vv_id": "874"
+  },
+  {
+    "row_index": 490,
+    "ingredient": "Нога",
+    "pov_id": "338",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 491,
+    "ingredient": "Шкура свиная",
+    "pov_id": "848",
+    "vv_id": "10060"
+  },
+  {
+    "row_index": 494,
+    "ingredient": "Масло льняное",
+    "pov_id": "560",
+    "vv_id": "4523"
+  },
+  {
+    "row_index": 497,
+    "ingredient": "Маргарин",
+    "pov_id": "169",
+    "vv_id": "4424"
+  },
+  {
+    "row_index": 500,
+    "ingredient": "Сок",
+    "pov_id": "94",
+    "vv_id": "8199"
+  },
+  {
+    "row_index": 503,
+    "ingredient": "Болгарский перец",
+    "pov_id": "892",
+    "vv_id": "6315"
+  },
+  {
+    "row_index": 506,
+    "ingredient": "Йод",
+    "pov_id": "930",
+    "vv_id": "8246"
+  },
+  {
+    "row_index": 509,
+    "ingredient": "Пюре овощное",
+    "pov_id": "173",
+    "vv_id": "6961"
+  },
+  {
+    "row_index": 512,
+    "ingredient": "Миндаль",
+    "pov_id": "88",
+    "vv_id": "4718"
+  },
+  {
+    "row_index": 515,
+    "ingredient": "Пшено",
+    "pov_id": "260",
+    "vv_id": "6914"
+  },
+  {
+    "row_index": 518,
+    "ingredient": "Лаванда",
+    "pov_id": "759",
+    "vv_id": "4130"
+  },
+  {
+    "row_index": 521,
+    "ingredient": "Приправа",
+    "pov_id": "17",
+    "vv_id": "6831"
+  },
+  {
+    "row_index": 524,
+    "ingredient": "Хлебцы",
+    "pov_id": "190",
+    "vv_id": "2795"
+  },
+  {
+    "row_index": 527,
+    "ingredient": "Сыр сулугуни",
+    "pov_id": "257",
+    "vv_id": "8950"
+  },
+  {
+    "row_index": 530,
+    "ingredient": "Пажитник",
+    "pov_id": "356",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 531,
+    "ingredient": "Куркума",
+    "pov_id": "249",
+    "vv_id": "3925"
+  },
+  {
+    "row_index": 534,
+    "ingredient": "Бергамот",
+    "pov_id": "958",
+    "vv_id": "860"
+  },
+  {
+    "row_index": 537,
+    "ingredient": "Йогурт",
+    "pov_id": "79",
+    "vv_id": "10252"
+  },
+  {
+    "row_index": 540,
+    "ingredient": "Курица",
+    "pov_id": "196",
+    "vv_id": "6573"
+  },
+  {
+    "row_index": 543,
+    "ingredient": "Лист вишневый",
+    "pov_id": "527",
+    "vv_id": "5536"
+  },
+  {
+    "row_index": 546,
+    "ingredient": "Кости",
+    "pov_id": "21",
+    "vv_id": "1945"
+  },
+  {
+    "row_index": 549,
+    "ingredient": "Уксусная эссенция",
+    "pov_id": "221",
+    "vv_id": "25"
+  },
+  {
+    "row_index": 550,
+    "ingredient": "Пиво нефильтрованное",
+    "pov_id": "828",
+    "vv_id": "6638"
+  },
+  {
+    "row_index": 553,
+    "ingredient": "Пенне",
+    "pov_id": "703",
+    "vv_id": "4273"
+  },
+  {
+    "row_index": 556,
+    "ingredient": "Коренья",
+    "pov_id": "577",
+    "vv_id": "148"
+  },
+  {
+    "row_index": 557,
+    "ingredient": "Крылья куриные",
+    "pov_id": "369",
+    "vv_id": "3850"
+  },
+  {
+    "row_index": 560,
+    "ingredient": "Рахат-лукум",
+    "pov_id": "873",
+    "vv_id": "4200"
+  },
+  {
+    "row_index": 563,
+    "ingredient": "Орех макадамия",
+    "pov_id": "875",
+    "vv_id": "5729"
+  },
+  {
+    "row_index": 566,
+    "ingredient": "Стружка кокосовая",
+    "pov_id": "244",
+    "vv_id": "8533"
+  },
+  {
+    "row_index": 569,
+    "ingredient": "Рулька",
+    "pov_id": "376",
+    "vv_id": "7162"
+  },
+  {
+    "row_index": 572,
+    "ingredient": "Минеола",
+    "pov_id": "819",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 573,
+    "ingredient": "Дайкон",
+    "pov_id": "228",
+    "vv_id": "7005"
+  },
+  {
+    "row_index": 576,
+    "ingredient": "Масло растительное",
+    "pov_id": "18",
+    "vv_id": "4589"
+  },
+  {
+    "row_index": 579,
+    "ingredient": "Смородина белая",
+    "pov_id": "739",
+    "vv_id": "8053"
+  },
+  {
+    "row_index": 582,
+    "ingredient": "Фарш рыбный",
+    "pov_id": "543",
+    "vv_id": "1528"
+  },
+  {
+    "row_index": 585,
+    "ingredient": "Помидоры",
+    "pov_id": "353",
+    "vv_id": "91"
+  },
+  {
+    "row_index": 588,
+    "ingredient": "Рис",
+    "pov_id": "38",
+    "vv_id": "7028"
+  },
+  {
+    "row_index": 591,
+    "ingredient": "Капуста морская",
+    "pov_id": "189",
+    "vv_id": "5060"
+  },
+  {
+    "row_index": 594,
+    "ingredient": "Тапиока",
+    "pov_id": "733",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 595,
+    "ingredient": "Иваси",
+    "pov_id": "884",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 596,
+    "ingredient": "Пудинг ванильный",
+    "pov_id": "419",
+    "vv_id": "6921"
+  },
+  {
+    "row_index": 599,
+    "ingredient": "Маца",
+    "pov_id": "107",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 600,
+    "ingredient": "Тимьян",
+    "pov_id": "72",
+    "vv_id": "9165"
+  },
+  {
+    "row_index": 603,
+    "ingredient": "Топинамбур",
+    "pov_id": "768",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 604,
+    "ingredient": "Вишня",
+    "pov_id": "19",
+    "vv_id": "9916"
+  },
+  {
+    "row_index": 607,
+    "ingredient": "Грейпфрут",
+    "pov_id": "5",
+    "vv_id": "2015"
+  },
+  {
+    "row_index": 610,
+    "ingredient": "Авокадо",
+    "pov_id": "109",
+    "vv_id": "148"
+  },
+  {
+    "row_index": 613,
+    "ingredient": "Марципан",
+    "pov_id": "380",
+    "vv_id": "3401"
+  },
+  {
+    "row_index": 616,
+    "ingredient": "Инжир",
+    "pov_id": "479",
+    "vv_id": "2171"
+  },
+  {
+    "row_index": 619,
+    "ingredient": "Кардамон",
+    "pov_id": "82",
+    "vv_id": "2401"
+  },
+  {
+    "row_index": 622,
+    "ingredient": "Икра минтая",
+    "pov_id": "643",
+    "vv_id": "2131"
+  },
+  {
+    "row_index": 625,
+    "ingredient": "Батончик шоколадный",
+    "pov_id": "751",
+    "vv_id": "388"
+  },
+  {
+    "row_index": 628,
+    "ingredient": "Семга",
+    "pov_id": "298",
+    "vv_id": "7441"
+  },
+  {
+    "row_index": 631,
+    "ingredient": "Вино белое полусладкое",
+    "pov_id": "392",
+    "vv_id": "9882"
+  },
+  {
+    "row_index": 634,
+    "ingredient": "Свинина",
+    "pov_id": "254",
+    "vv_id": "8689"
+  },
+  {
+    "row_index": 637,
+    "ingredient": "Шиповник",
+    "pov_id": "707",
+    "vv_id": "7588"
+  },
+  {
+    "row_index": 640,
+    "ingredient": "Мармелад",
+    "pov_id": "384",
+    "vv_id": "4458"
+  },
+  {
+    "row_index": 643,
+    "ingredient": "Ассорти ягодное",
+    "pov_id": "552",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 646,
+    "ingredient": "Пудинг",
+    "pov_id": "651",
+    "vv_id": "6921"
+  },
+  {
+    "row_index": 649,
+    "ingredient": "Драже",
+    "pov_id": "333",
+    "vv_id": "1385"
+  },
+  {
+    "row_index": 652,
+    "ingredient": "Оладьи",
+    "pov_id": "787",
+    "vv_id": "5638"
+  },
+  {
+    "row_index": 655,
+    "ingredient": "Соба",
+    "pov_id": "795",
+    "vv_id": "3965"
+  },
+  {
+    "row_index": 658,
+    "ingredient": "Хлеб ржаной",
+    "pov_id": "879",
+    "vv_id": "2722"
+  },
+  {
+    "row_index": 661,
+    "ingredient": "Икра красная",
+    "pov_id": "484",
+    "vv_id": "6559"
+  },
+  {
+    "row_index": 664,
+    "ingredient": "Мозги говяжьи",
+    "pov_id": "838",
+    "vv_id": "7001"
+  },
+  {
+    "row_index": 667,
+    "ingredient": "Миндальная эссенция",
+    "pov_id": "949",
+    "vv_id": "1810"
+  },
+  {
+    "row_index": 670,
+    "ingredient": "Перец черный молотый",
+    "pov_id": null,
+    "vv_id": "6320"
+  },
+  {
+    "row_index": 673,
+    "ingredient": "Баранка",
+    "pov_id": "833",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 674,
+    "ingredient": "Карп",
+    "pov_id": "496",
+    "vv_id": "2405"
+  },
+  {
+    "row_index": 677,
+    "ingredient": "Джем",
+    "pov_id": "102",
+    "vv_id": "1413"
+  },
+  {
+    "row_index": 680,
+    "ingredient": "Базилик",
+    "pov_id": "179",
+    "vv_id": "409"
+  },
+  {
+    "row_index": 683,
+    "ingredient": "Тофу",
+    "pov_id": "343",
+    "vv_id": "9171"
+  },
+  {
+    "row_index": 686,
+    "ingredient": "Ирга",
+    "pov_id": "804",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 687,
+    "ingredient": "Устрицы",
+    "pov_id": "886",
+    "vv_id": "9645"
+  },
+  {
+    "row_index": 690,
+    "ingredient": "Бобы",
+    "pov_id": "712",
+    "vv_id": "672"
+  },
+  {
+    "row_index": 693,
+    "ingredient": "Мясо соевое",
+    "pov_id": "933",
+    "vv_id": "5123"
+  },
+  {
+    "row_index": 696,
+    "ingredient": "Сусло квасное",
+    "pov_id": "152",
+    "vv_id": "135"
+  },
+  {
+    "row_index": 697,
+    "ingredient": "Клубника",
+    "pov_id": "1",
+    "vv_id": "2964"
+  },
+  {
+    "row_index": 700,
+    "ingredient": "Хек",
+    "pov_id": "540",
+    "vv_id": "2657"
+  },
+  {
+    "row_index": 703,
+    "ingredient": "Ассорти фруктовое",
+    "pov_id": "599",
+    "vv_id": "129"
+  },
+  {
+    "row_index": 706,
+    "ingredient": "Салака",
+    "pov_id": "671",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 707,
+    "ingredient": "Корейка",
+    "pov_id": "242",
+    "vv_id": "3494"
+  },
+  {
+    "row_index": 710,
+    "ingredient": "Нуга",
+    "pov_id": "866",
+    "vv_id": "5550"
+  },
+  {
+    "row_index": 713,
+    "ingredient": "Гуми",
+    "pov_id": "927",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 714,
+    "ingredient": "Сок морковный",
+    "pov_id": "182",
+    "vv_id": "4887"
+  },
+  {
+    "row_index": 717,
+    "ingredient": "Порошок грибной",
+    "pov_id": "762",
+    "vv_id": "2023"
+  },
+  {
+    "row_index": 720,
+    "ingredient": "Филе трески",
+    "pov_id": "941",
+    "vv_id": "6002"
+  },
+  {
+    "row_index": 723,
+    "ingredient": "Ваниль",
+    "pov_id": "33",
+    "vv_id": "9723"
+  },
+  {
+    "row_index": 726,
+    "ingredient": "Мука соевая",
+    "pov_id": "805",
+    "vv_id": "5094"
+  },
+  {
+    "row_index": 729,
+    "ingredient": "Сыр полутвердый",
+    "pov_id": "300",
+    "vv_id": "8905"
+  },
+  {
+    "row_index": 732,
+    "ingredient": "Вино красное сухое",
+    "pov_id": "394",
+    "vv_id": "9884"
+  },
+  {
+    "row_index": 735,
+    "ingredient": "Опята",
+    "pov_id": "155",
+    "vv_id": "2030"
+  },
+  {
+    "row_index": 738,
+    "ingredient": "Каракатица",
+    "pov_id": "669",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 739,
+    "ingredient": "Капуста брюссельская",
+    "pov_id": "391",
+    "vv_id": "2343"
+  },
+  {
+    "row_index": 742,
+    "ingredient": "Оленина",
+    "pov_id": "803",
+    "vv_id": "5643"
+  },
+  {
+    "row_index": 745,
+    "ingredient": "Паприка",
+    "pov_id": "956",
+    "vv_id": "5839"
+  },
+  {
+    "row_index": 748,
+    "ingredient": "Простокваша",
+    "pov_id": "448",
+    "vv_id": "6865"
+  },
+  {
+    "row_index": 751,
+    "ingredient": "Балык",
+    "pov_id": "386",
+    "vv_id": "250"
+  },
+  {
+    "row_index": 754,
+    "ingredient": "Сыр голландский",
+    "pov_id": "36",
+    "vv_id": "8729"
+  },
+  {
+    "row_index": 757,
+    "ingredient": "Окорочок куриный",
+    "pov_id": "250",
+    "vv_id": "5599"
+  },
+  {
+    "row_index": 760,
+    "ingredient": "Барбарис",
+    "pov_id": "477",
+    "vv_id": "272"
+  },
+  {
+    "row_index": 763,
+    "ingredient": "Маслята",
+    "pov_id": "634",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 764,
+    "ingredient": "Молоко концентрированное",
+    "pov_id": "269",
+    "vv_id": "4862"
+  },
+  {
+    "row_index": 767,
+    "ingredient": "Кампари",
+    "pov_id": "926",
+    "vv_id": "243"
+  },
+  {
+    "row_index": 768,
+    "ingredient": "Какао-масло",
+    "pov_id": "30",
+    "vv_id": "2267"
+  },
+  {
+    "row_index": 771,
+    "ingredient": "Молоко кедровое",
+    "pov_id": "864",
+    "vv_id": "4862"
+  },
+  {
+    "row_index": 774,
+    "ingredient": "Чабер",
+    "pov_id": "358",
+    "vv_id": "79"
+  },
+  {
+    "row_index": 775,
+    "ingredient": "Курага",
+    "pov_id": "118",
+    "vv_id": "3887"
+  },
+  {
+    "row_index": 778,
+    "ingredient": "Сарделька",
+    "pov_id": "455",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 779,
+    "ingredient": "Табаско",
+    "pov_id": "312",
+    "vv_id": "8433"
+  },
+  {
+    "row_index": 782,
+    "ingredient": "Шпиг",
+    "pov_id": "166",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 783,
+    "ingredient": "Печенье юбилейное",
+    "pov_id": "948",
+    "vv_id": "6202"
+  },
+  {
+    "row_index": 786,
+    "ingredient": "Лук-шалот",
+    "pov_id": "227",
+    "vv_id": "4190"
+  },
+  {
+    "row_index": 789,
+    "ingredient": "Бисквит",
+    "pov_id": "510",
+    "vv_id": "537"
+  },
+  {
+    "row_index": 792,
+    "ingredient": "Смесь специй",
+    "pov_id": "296",
+    "vv_id": "7934"
+  },
+  {
+    "row_index": 795,
+    "ingredient": "Молоко сухое",
+    "pov_id": "387",
+    "vv_id": "4858"
+  },
+  {
+    "row_index": 798,
+    "ingredient": "Кисель",
+    "pov_id": "678",
+    "vv_id": "2923"
+  },
+  {
+    "row_index": 801,
+    "ingredient": "Масло кокосовое",
+    "pov_id": "533",
+    "vv_id": "4515"
+  },
+  {
+    "row_index": 804,
+    "ingredient": "Конфитюр",
+    "pov_id": "432",
+    "vv_id": "3472"
+  },
+  {
+    "row_index": 807,
+    "ingredient": "Лист виноградный",
+    "pov_id": "625",
+    "vv_id": "9909"
+  },
+  {
+    "row_index": 810,
+    "ingredient": "Сыр голубой",
+    "pov_id": "469",
+    "vv_id": "8926"
+  },
+  {
+    "row_index": 813,
+    "ingredient": "Тефтели",
+    "pov_id": "917",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 814,
+    "ingredient": "Фейхоа",
+    "pov_id": "645",
+    "vv_id": "1558"
+  },
+  {
+    "row_index": 817,
+    "ingredient": "Масло миндальное",
+    "pov_id": "726",
+    "vv_id": "4521"
+  },
+  {
+    "row_index": 820,
+    "ingredient": "Котлета",
+    "pov_id": "98",
+    "vv_id": "3555"
+  },
+  {
+    "row_index": 823,
+    "ingredient": "Вино красное полусладкое",
+    "pov_id": "335",
+    "vv_id": "9884"
+  },
+  {
+    "row_index": 826,
+    "ingredient": "Пармезан",
+    "pov_id": "252",
+    "vv_id": "8852"
+  },
+  {
+    "row_index": 829,
+    "ingredient": "Свекла листовая",
+    "pov_id": "745",
+    "vv_id": "8679"
+  },
+  {
+    "row_index": 832,
+    "ingredient": "Треска",
+    "pov_id": "329",
+    "vv_id": "9374"
+  },
+  {
+    "row_index": 835,
+    "ingredient": "Концентрат",
+    "pov_id": "723",
+    "vv_id": "3481"
+  },
+  {
+    "row_index": 838,
+    "ingredient": "Масло грецкого ореха",
+    "pov_id": "324",
+    "vv_id": "4510"
+  },
+  {
+    "row_index": 841,
+    "ingredient": "Карамель",
+    "pov_id": "504",
+    "vv_id": "2379"
+  },
+  {
+    "row_index": 844,
+    "ingredient": "Хлопья гороховые",
+    "pov_id": "861",
+    "vv_id": "2821"
+  },
+  {
+    "row_index": 847,
+    "ingredient": "Сливки",
+    "pov_id": "35",
+    "vv_id": "7866"
+  },
+  {
+    "row_index": 850,
+    "ingredient": "Чоризо",
+    "pov_id": "794",
+    "vv_id": "1225"
+  },
+  {
+    "row_index": 853,
+    "ingredient": "Крупа кукурузная",
+    "pov_id": "549",
+    "vv_id": "3822"
+  },
+  {
+    "row_index": 856,
+    "ingredient": "Кета",
+    "pov_id": "378",
+    "vv_id": "2604"
+  },
+  {
+    "row_index": 859,
+    "ingredient": "Масло хлопковое",
+    "pov_id": "898",
+    "vv_id": "4589"
+  },
+  {
+    "row_index": 862,
+    "ingredient": "Перец сычуаньский",
+    "pov_id": "74",
+    "vv_id": "6350"
+  },
+  {
+    "row_index": 865,
+    "ingredient": "Сушки",
+    "pov_id": "627",
+    "vv_id": "8677"
+  },
+  {
+    "row_index": 868,
+    "ingredient": "Песто",
+    "pov_id": "528",
+    "vv_id": "6625"
+  },
+  {
+    "row_index": 871,
+    "ingredient": "Салями",
+    "pov_id": "650",
+    "vv_id": "3197"
+  },
+  {
+    "row_index": 874,
+    "ingredient": "Хмель",
+    "pov_id": "929",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 875,
+    "ingredient": "Пельмени",
+    "pov_id": "199",
+    "vv_id": "6229"
+  },
+  {
+    "row_index": 878,
+    "ingredient": "Пюре фруктовое",
+    "pov_id": "261",
+    "vv_id": "6937"
+  },
+  {
+    "row_index": 881,
+    "ingredient": "Сыр мягкий",
+    "pov_id": "51",
+    "vv_id": "8822"
+  },
+  {
+    "row_index": 884,
+    "ingredient": "Имбирь",
+    "pov_id": "73",
+    "vv_id": "2160"
+  },
+  {
+    "row_index": 887,
+    "ingredient": "Земляника",
+    "pov_id": "701",
+    "vv_id": "10176"
+  },
+  {
+    "row_index": 890,
+    "ingredient": "Корюшка",
+    "pov_id": "757",
+    "vv_id": "3516"
+  },
+  {
+    "row_index": 893,
+    "ingredient": "Печень минтая",
+    "pov_id": "849",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 896,
+    "ingredient": "Напиток молочный",
+    "pov_id": "713",
+    "vv_id": "5394"
+  },
+  {
+    "row_index": 899,
+    "ingredient": "Глютен",
+    "pov_id": "741",
+    "vv_id": "262"
+  },
+  {
+    "row_index": 900,
+    "ingredient": "Спаржа",
+    "pov_id": "452",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 901,
+    "ingredient": "Хлопья ячменные",
+    "pov_id": "867",
+    "vv_id": "2821"
+  },
+  {
+    "row_index": 904,
+    "ingredient": "Сыр твердый",
+    "pov_id": "2",
+    "vv_id": "8964"
+  },
+  {
+    "row_index": 907,
+    "ingredient": "Разрыхлитель теста",
+    "pov_id": "65",
+    "vv_id": "6998"
+  },
+  {
+    "row_index": 910,
+    "ingredient": "Томаты протертые",
+    "pov_id": "668",
+    "vv_id": "9231"
+  },
+  {
+    "row_index": 913,
+    "ingredient": "Помело",
+    "pov_id": "402",
+    "vv_id": "6757"
+  },
+  {
+    "row_index": 916,
+    "ingredient": "Фарш соевый",
+    "pov_id": "728",
+    "vv_id": "1528"
+  },
+  {
+    "row_index": 919,
+    "ingredient": "Семечки подсолнуха",
+    "pov_id": "326",
+    "vv_id": "7409"
+  },
+  {
+    "row_index": 922,
+    "ingredient": "Брокколетти",
+    "pov_id": "872",
+    "vv_id": "258"
+  },
+  {
+    "row_index": 923,
+    "ingredient": "Голень куриная",
+    "pov_id": "78",
+    "vv_id": "9864"
+  },
+  {
+    "row_index": 926,
+    "ingredient": "Ряженка",
+    "pov_id": "450",
+    "vv_id": "7174"
+  },
+  {
+    "row_index": 929,
+    "ingredient": "Папоротник",
+    "pov_id": "586",
+    "vv_id": "112"
+  },
+  {
+    "row_index": 930,
+    "ingredient": "Бешамель",
+    "pov_id": "681",
+    "vv_id": "1580"
+  },
+  {
+    "row_index": 933,
+    "ingredient": "Ольховый дым",
+    "pov_id": "860",
+    "vv_id": "45"
+  },
+  {
+    "row_index": 934,
+    "ingredient": "Ароматизатор",
+    "pov_id": "270",
+    "vv_id": "86"
+  },
+  {
+    "row_index": 937,
+    "ingredient": "Побеги",
+    "pov_id": "915",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 938,
+    "ingredient": "Зерно",
+    "pov_id": "711",
+    "vv_id": "9562"
+  },
+  {
+    "row_index": 941,
+    "ingredient": "Пюре ягодное",
+    "pov_id": "588",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 944,
+    "ingredient": "Сок мандариновый",
+    "pov_id": "766",
+    "vv_id": "8169"
+  },
+  {
+    "row_index": 947,
+    "ingredient": "Мука гречневая",
+    "pov_id": "367",
+    "vv_id": "5076"
+  },
+  {
+    "row_index": 950,
+    "ingredient": "Сельдерей",
+    "pov_id": "408",
+    "vv_id": "7403"
+  },
+  {
+    "row_index": 953,
+    "ingredient": "Бренди",
+    "pov_id": "632",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 954,
+    "ingredient": "Масло соевое",
+    "pov_id": "721",
+    "vv_id": "4589"
+  },
+  {
+    "row_index": 957,
+    "ingredient": "Ягода",
+    "pov_id": "201",
+    "vv_id": "4062"
+  },
+  {
+    "row_index": 960,
+    "ingredient": "Вино красное полусухое",
+    "pov_id": "710",
+    "vv_id": "9884"
+  },
+  {
+    "row_index": 963,
+    "ingredient": "Мороженое",
+    "pov_id": "443",
+    "vv_id": "4916"
+  },
+  {
+    "row_index": 966,
+    "ingredient": "Овощи",
+    "pov_id": "266",
+    "vv_id": "5767"
+  },
+  {
+    "row_index": 969,
+    "ingredient": "Блины тонкие",
+    "pov_id": "902",
+    "vv_id": "5070"
+  },
+  {
+    "row_index": 972,
+    "ingredient": "Зефир",
+    "pov_id": "435",
+    "vv_id": "10344"
+  },
+  {
+    "row_index": 975,
+    "ingredient": "Тоник",
+    "pov_id": "593",
+    "vv_id": "9255"
+  },
+  {
+    "row_index": 978,
+    "ingredient": "Сухарики",
+    "pov_id": "417",
+    "vv_id": "8554"
+  },
+  {
+    "row_index": 981,
+    "ingredient": "Маршмеллоу",
+    "pov_id": "418",
+    "vv_id": "5979"
+  },
+  {
+    "row_index": 984,
+    "ingredient": "Сидр",
+    "pov_id": "724",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 985,
+    "ingredient": "Фарш куриный",
+    "pov_id": "12",
+    "vv_id": "1528"
+  },
+  {
+    "row_index": 988,
+    "ingredient": "Цедра апельсина",
+    "pov_id": "188",
+    "vv_id": "1335"
+  },
+  {
+    "row_index": 991,
+    "ingredient": "Патока",
+    "pov_id": "666",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 992,
+    "ingredient": "Легкое",
+    "pov_id": "749",
+    "vv_id": "9158"
+  },
+  {
+    "row_index": 995,
+    "ingredient": "Сироп алкогольный",
+    "pov_id": "852",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 998,
+    "ingredient": "Печень индюшиная",
+    "pov_id": "575",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 1001,
+    "ingredient": "Корнишоны",
+    "pov_id": "316",
+    "vv_id": "5583"
+  },
+  {
+    "row_index": 1004,
+    "ingredient": "Баклажан",
+    "pov_id": "9",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 1005,
+    "ingredient": "Коктейль морской",
+    "pov_id": "416",
+    "vv_id": "5066"
+  },
+  {
+    "row_index": 1008,
+    "ingredient": "Моцарелла",
+    "pov_id": "263",
+    "vv_id": "8804"
+  },
+  {
+    "row_index": 1011,
+    "ingredient": "Угорь",
+    "pov_id": "337",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1012,
+    "ingredient": "Облепиха",
+    "pov_id": "677",
+    "vv_id": "2923"
+  },
+  {
+    "row_index": 1015,
+    "ingredient": "Сметана",
+    "pov_id": "58",
+    "vv_id": "8027"
+  },
+  {
+    "row_index": 1018,
+    "ingredient": "Водка",
+    "pov_id": "20",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 1019,
+    "ingredient": "Слива",
+    "pov_id": "226",
+    "vv_id": "7854"
+  },
+  {
+    "row_index": 1022,
+    "ingredient": "Айран",
+    "pov_id": "758",
+    "vv_id": "150"
+  },
+  {
+    "row_index": 1025,
+    "ingredient": "Икра рыбная",
+    "pov_id": "253",
+    "vv_id": "2101"
+  },
+  {
+    "row_index": 1028,
+    "ingredient": "Вино белое сухое",
+    "pov_id": "53",
+    "vv_id": "10119"
+  },
+  {
+    "row_index": 1031,
+    "ingredient": "Желудки куриные",
+    "pov_id": "521",
+    "vv_id": "10425"
+  },
+  {
+    "row_index": 1034,
+    "ingredient": "Мусс яблочный",
+    "pov_id": "784",
+    "vv_id": "10066"
+  },
+  {
+    "row_index": 1037,
+    "ingredient": "Лапша",
+    "pov_id": "282",
+    "vv_id": "3971"
+  },
+  {
+    "row_index": 1040,
+    "ingredient": "Ангостура",
+    "pov_id": "957",
+    "vv_id": "24"
+  },
+  {
+    "row_index": 1041,
+    "ingredient": "Бальзам",
+    "pov_id": "821",
+    "vv_id": "251"
+  },
+  {
+    "row_index": 1044,
+    "ingredient": "Яйцо перепелиное",
+    "pov_id": "306",
+    "vv_id": "10124"
+  },
+  {
+    "row_index": 1047,
+    "ingredient": "Паштет",
+    "pov_id": "631",
+    "vv_id": "5871"
+  },
+  {
+    "row_index": 1050,
+    "ingredient": "Псиллиум",
+    "pov_id": "857",
+    "vv_id": "6915"
+  },
+  {
+    "row_index": 1053,
+    "ingredient": "Адинамода",
+    "pov_id": "969",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 1054,
+    "ingredient": "Сердце",
+    "pov_id": "535",
+    "vv_id": "7504"
+  },
+  {
+    "row_index": 1057,
+    "ingredient": "Гарам масала",
+    "pov_id": "663",
+    "vv_id": "8003"
+  },
+  {
+    "row_index": 1060,
+    "ingredient": "Кукуруза",
+    "pov_id": "124",
+    "vv_id": "3870"
+  },
+  {
+    "row_index": 1063,
+    "ingredient": "Перец розовый",
+    "pov_id": "500",
+    "vv_id": "6345"
+  },
+  {
+    "row_index": 1066,
+    "ingredient": "Сироп сахарный",
+    "pov_id": "471",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 1069,
+    "ingredient": "Орех кедровый",
+    "pov_id": "292",
+    "vv_id": "5733"
+  },
+  {
+    "row_index": 1072,
+    "ingredient": "Отруби",
+    "pov_id": "346",
+    "vv_id": "5761"
+  },
+  {
+    "row_index": 1075,
+    "ingredient": "Нори",
+    "pov_id": "518",
+    "vv_id": "10042"
+  },
+  {
+    "row_index": 1078,
+    "ingredient": "Крахмал кукурузный",
+    "pov_id": "186",
+    "vv_id": "3673"
+  },
+  {
+    "row_index": 1081,
+    "ingredient": "Вода",
+    "pov_id": "24",
+    "vv_id": "10036"
+  },
+  {
+    "row_index": 1084,
+    "ingredient": "Мука рисовая",
+    "pov_id": "206",
+    "vv_id": "5094"
+  },
+  {
+    "row_index": 1087,
+    "ingredient": "Пастернак",
+    "pov_id": "359",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 1088,
+    "ingredient": "Вафельные трубочки",
+    "pov_id": "773",
+    "vv_id": "9658"
+  },
+  {
+    "row_index": 1091,
+    "ingredient": "Сироп",
+    "pov_id": "865",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 1094,
+    "ingredient": "Семена укропа",
+    "pov_id": "639",
+    "vv_id": "7428"
+  },
+  {
+    "row_index": 1097,
+    "ingredient": "Сыр",
+    "pov_id": "869",
+    "vv_id": "8780"
+  },
+  {
+    "row_index": 1100,
+    "ingredient": "Тесто песочное",
+    "pov_id": "570",
+    "vv_id": "9153"
+  },
+  {
+    "row_index": 1103,
+    "ingredient": "Молоко сгущенное",
+    "pov_id": "26",
+    "vv_id": "4856"
+  },
+  {
+    "row_index": 1106,
+    "ingredient": "Лист малиновый",
+    "pov_id": "743",
+    "vv_id": "9827"
+  },
+  {
+    "row_index": 1109,
+    "ingredient": "Цедра лайма",
+    "pov_id": "264",
+    "vv_id": "8166"
+  },
+  {
+    "row_index": 1112,
+    "ingredient": "Масло арахисовое",
+    "pov_id": "640",
+    "vv_id": "4589"
+  },
+  {
+    "row_index": 1115,
+    "ingredient": "Колбаски",
+    "pov_id": "280",
+    "vv_id": "3278"
+  },
+  {
+    "row_index": 1118,
+    "ingredient": "Мука нутовая",
+    "pov_id": "628",
+    "vv_id": "5084"
+  },
+  {
+    "row_index": 1121,
+    "ingredient": "Меланж",
+    "pov_id": "936",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 1122,
+    "ingredient": "Абрикос",
+    "pov_id": "161",
+    "vv_id": "1"
+  },
+  {
+    "row_index": 1125,
+    "ingredient": "Ванильная эссенция",
+    "pov_id": "342",
+    "vv_id": "5969"
+  },
+  {
+    "row_index": 1128,
+    "ingredient": "Вино десертное",
+    "pov_id": "474",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 1131,
+    "ingredient": "Багет",
+    "pov_id": "379",
+    "vv_id": "232"
+  },
+  {
+    "row_index": 1134,
+    "ingredient": "Мандариновая цедра",
+    "pov_id": "932",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1135,
+    "ingredient": "Орегано",
+    "pov_id": "231",
+    "vv_id": "5726"
+  },
+  {
+    "row_index": 1138,
+    "ingredient": "Цуккини",
+    "pov_id": "112",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 1139,
+    "ingredient": "Говядина",
+    "pov_id": "125",
+    "vv_id": "1930"
+  },
+  {
+    "row_index": 1142,
+    "ingredient": "Маскарпоне",
+    "pov_id": "293",
+    "vv_id": "8821"
+  },
+  {
+    "row_index": 1145,
+    "ingredient": "Пюре томатное",
+    "pov_id": "516",
+    "vv_id": "4210"
+  },
+  {
+    "row_index": 1148,
+    "ingredient": "Соус фруктовый",
+    "pov_id": "706",
+    "vv_id": "1793"
+  },
+  {
+    "row_index": 1151,
+    "ingredient": "Халва подсолнечная",
+    "pov_id": "763",
+    "vv_id": "2646"
+  },
+  {
+    "row_index": 1154,
+    "ingredient": "Сироп миндальный",
+    "pov_id": "825",
+    "vv_id": "3761"
+  },
+  {
+    "row_index": 1157,
+    "ingredient": "Сахар гранулированный",
+    "pov_id": "400",
+    "vv_id": "7208"
+  },
+  {
+    "row_index": 1160,
+    "ingredient": "Паста чесночно-имбирная",
+    "pov_id": "883",
+    "vv_id": "5913"
+  },
+  {
+    "row_index": 1163,
+    "ingredient": "Фисташки",
+    "pov_id": "160",
+    "vv_id": "1658"
+  },
+  {
+    "row_index": 1166,
+    "ingredient": "Семена чиа",
+    "pov_id": "911",
+    "vv_id": "7428"
+  },
+  {
+    "row_index": 1169,
+    "ingredient": "Эстрагон",
+    "pov_id": "354",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 1170,
+    "ingredient": "Вода розовая",
+    "pov_id": "655",
+    "vv_id": "10036"
+  },
+  {
+    "row_index": 1173,
+    "ingredient": "Абрикосовое варенье",
+    "pov_id": "952",
+    "vv_id": "9726"
+  },
+  {
+    "row_index": 1176,
+    "ingredient": "Капуста цветная",
+    "pov_id": "216",
+    "vv_id": "2369"
+  },
+  {
+    "row_index": 1179,
+    "ingredient": "Сироп черничный",
+    "pov_id": "895",
+    "vv_id": "5024"
+  },
+  {
+    "row_index": 1182,
+    "ingredient": "Ванилин",
+    "pov_id": "61",
+    "vv_id": "9724"
+  },
+  {
+    "row_index": 1185,
+    "ingredient": "Фета",
+    "pov_id": "473",
+    "vv_id": "8914"
+  },
+  {
+    "row_index": 1188,
+    "ingredient": "Консервированных томатов",
+    "pov_id": "942",
+    "vv_id": "8387"
+  },
+  {
+    "row_index": 1191,
+    "ingredient": "Паста",
+    "pov_id": "457",
+    "vv_id": "5913"
+  },
+  {
+    "row_index": 1194,
+    "ingredient": "Горбуша",
+    "pov_id": "44",
+    "vv_id": "1886"
+  },
+  {
+    "row_index": 1197,
+    "ingredient": "Вино белое сладкое",
+    "pov_id": "769",
+    "vv_id": "9882"
+  },
+  {
+    "row_index": 1200,
+    "ingredient": "Вино красное сладкое",
+    "pov_id": "670",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 1203,
+    "ingredient": "Варенье",
+    "pov_id": "174",
+    "vv_id": "9755"
+  },
+  {
+    "row_index": 1206,
+    "ingredient": "Лаваш",
+    "pov_id": "393",
+    "vv_id": "4018"
+  },
+  {
+    "row_index": 1209,
+    "ingredient": "Тесто слоеное дрожжевое",
+    "pov_id": "295",
+    "vv_id": "9160"
+  },
+  {
+    "row_index": 1212,
+    "ingredient": "Брынза",
+    "pov_id": "291",
+    "vv_id": "8784"
+  },
+  {
+    "row_index": 1215,
+    "ingredient": "Джем апельсиновый",
+    "pov_id": "685",
+    "vv_id": "1423"
+  },
+  {
+    "row_index": 1218,
+    "ingredient": "Желирующая смесь",
+    "pov_id": "693",
+    "vv_id": "7934"
+  },
+  {
+    "row_index": 1221,
+    "ingredient": "Хлопья шоколадные",
+    "pov_id": "770",
+    "vv_id": "6900"
+  },
+  {
+    "row_index": 1224,
+    "ingredient": "Мята",
+    "pov_id": "259",
+    "vv_id": "5135"
+  },
+  {
+    "row_index": 1227,
+    "ingredient": "Калина",
+    "pov_id": "529",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 1228,
+    "ingredient": "Фосфат пищевой",
+    "pov_id": "881",
+    "vv_id": "4056"
+  },
+  {
+    "row_index": 1231,
+    "ingredient": "Манная крупа",
+    "pov_id": "846",
+    "vv_id": "3824"
+  },
+  {
+    "row_index": 1234,
+    "ingredient": "Джусай",
+    "pov_id": "736",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 1235,
+    "ingredient": "Хлопья рисовые",
+    "pov_id": "225",
+    "vv_id": "2826"
+  },
+  {
+    "row_index": 1238,
+    "ingredient": "Паста карри",
+    "pov_id": "654",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1241,
+    "ingredient": "Мука амарантовая",
+    "pov_id": "856",
+    "vv_id": "5094"
+  },
+  {
+    "row_index": 1244,
+    "ingredient": "Печень куриная",
+    "pov_id": "165",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 1247,
+    "ingredient": "Рябина черноплодная",
+    "pov_id": "687",
+    "vv_id": "9729"
+  },
+  {
+    "row_index": 1250,
+    "ingredient": "Зелень",
+    "pov_id": "16",
+    "vv_id": "10380"
+  },
+  {
+    "row_index": 1253,
+    "ingredient": "Киноа",
+    "pov_id": "468",
+    "vv_id": "2904"
+  },
+  {
+    "row_index": 1256,
+    "ingredient": "Патиссон",
+    "pov_id": "113",
+    "vv_id": "135"
+  },
+  {
+    "row_index": 1257,
+    "ingredient": "Батон",
+    "pov_id": "147",
+    "vv_id": "290"
+  },
+  {
+    "row_index": 1260,
+    "ingredient": "Перец лимонный",
+    "pov_id": "662",
+    "vv_id": "6339"
+  },
+  {
+    "row_index": 1263,
+    "ingredient": "Хлорид кальция",
+    "pov_id": "272",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 1264,
+    "ingredient": "Хамса",
+    "pov_id": "843",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 1265,
+    "ingredient": "Мука ячменная",
+    "pov_id": "481",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 1268,
+    "ingredient": "Ветчина",
+    "pov_id": "215",
+    "vv_id": "9861"
+  },
+  {
+    "row_index": 1271,
+    "ingredient": "Молоко",
+    "pov_id": "0",
+    "vv_id": "4862"
+  },
+  {
+    "row_index": 1274,
+    "ingredient": "Крахмал картофельный",
+    "pov_id": "288",
+    "vv_id": "3673"
+  },
+  {
+    "row_index": 1277,
+    "ingredient": "Желе",
+    "pov_id": "205",
+    "vv_id": "10405"
+  },
+  {
+    "row_index": 1280,
+    "ingredient": "Кешью",
+    "pov_id": "214",
+    "vv_id": "2594"
+  },
+  {
+    "row_index": 1283,
+    "ingredient": "Каперсы",
+    "pov_id": "348",
+    "vv_id": "2316"
+  },
+  {
+    "row_index": 1286,
+    "ingredient": "Вешенки",
+    "pov_id": "401",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 1287,
+    "ingredient": "Мак",
+    "pov_id": "47",
+    "vv_id": "4316"
+  },
+  {
+    "row_index": 1290,
+    "ingredient": "Сетка жировая",
+    "pov_id": "781",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1291,
+    "ingredient": "Редька",
+    "pov_id": "357",
+    "vv_id": "7007"
+  },
+  {
+    "row_index": 1294,
+    "ingredient": "Щука",
+    "pov_id": "430",
+    "vv_id": "7579"
+  },
+  {
+    "row_index": 1297,
+    "ingredient": "Блин",
+    "pov_id": "322",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 1298,
+    "ingredient": "Пангасиус",
+    "pov_id": "578",
+    "vv_id": "5823"
+  },
+  {
+    "row_index": 1301,
+    "ingredient": "Ячмень",
+    "pov_id": "891",
+    "vv_id": "262"
+  },
+  {
+    "row_index": 1302,
+    "ingredient": "Гриб чайный",
+    "pov_id": "962",
+    "vv_id": "5251"
+  },
+  {
+    "row_index": 1305,
+    "ingredient": "Сок яблочный",
+    "pov_id": "119",
+    "vv_id": "8217"
+  },
+  {
+    "row_index": 1308,
+    "ingredient": "Мука кунжутная",
+    "pov_id": "519",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 1311,
+    "ingredient": "Кекс ванильный",
+    "pov_id": "785",
+    "vv_id": "1447"
+  },
+  {
+    "row_index": 1314,
+    "ingredient": "Подчеревина свиная",
+    "pov_id": "931",
+    "vv_id": "7583"
+  },
+  {
+    "row_index": 1317,
+    "ingredient": "Перец белый",
+    "pov_id": "193",
+    "vv_id": "6312"
+  },
+  {
+    "row_index": 1320,
+    "ingredient": "Вино крепленое",
+    "pov_id": "882",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 1323,
+    "ingredient": "Кетчуп",
+    "pov_id": "139",
+    "vv_id": "2623"
+  },
+  {
+    "row_index": 1326,
+    "ingredient": "Кабачок",
+    "pov_id": "213",
+    "vv_id": "6963"
+  },
+  {
+    "row_index": 1329,
+    "ingredient": "Шейка куриная",
+    "pov_id": "583",
+    "vv_id": "9864"
+  },
+  {
+    "row_index": 1332,
+    "ingredient": "Ежевика",
+    "pov_id": "483",
+    "vv_id": "1482"
+  },
+  {
+    "row_index": 1335,
+    "ingredient": "Моллюски",
+    "pov_id": "767",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 1336,
+    "ingredient": "Килька",
+    "pov_id": "141",
+    "vv_id": "2895"
+  },
+  {
+    "row_index": 1339,
+    "ingredient": "Солод",
+    "pov_id": "371",
+    "vv_id": "3939"
+  },
+  {
+    "row_index": 1342,
+    "ingredient": "Тесто фило",
+    "pov_id": "421",
+    "vv_id": "9151"
+  },
+  {
+    "row_index": 1345,
+    "ingredient": "Молоко кокосовое",
+    "pov_id": "390",
+    "vv_id": "3091"
+  },
+  {
+    "row_index": 1348,
+    "ingredient": "Ревень",
+    "pov_id": "459",
+    "vv_id": "7009"
+  },
+  {
+    "row_index": 1351,
+    "ingredient": "Мидии",
+    "pov_id": "494",
+    "vv_id": "4684"
+  },
+  {
+    "row_index": 1354,
+    "ingredient": "Стрелки чесночные",
+    "pov_id": "566",
+    "vv_id": "2001"
+  },
+  {
+    "row_index": 1357,
+    "ingredient": "Тесто блинное",
+    "pov_id": "968",
+    "vv_id": "9139"
+  },
+  {
+    "row_index": 1360,
+    "ingredient": "Смородина черная",
+    "pov_id": "92",
+    "vv_id": "1031"
+  },
+  {
+    "row_index": 1363,
+    "ingredient": "Масло горчичное",
+    "pov_id": "449",
+    "vv_id": "4509"
+  },
+  {
+    "row_index": 1366,
+    "ingredient": "Налим",
+    "pov_id": "431",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 1367,
+    "ingredient": "Лист смородиновый",
+    "pov_id": "526",
+    "vv_id": "4029"
+  },
+  {
+    "row_index": 1370,
+    "ingredient": "Сироп кукурузный",
+    "pov_id": "764",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 1373,
+    "ingredient": "Мед",
+    "pov_id": "159",
+    "vv_id": "4639"
+  },
+  {
+    "row_index": 1376,
+    "ingredient": "Лимонад",
+    "pov_id": "683",
+    "vv_id": "4145"
+  },
+  {
+    "row_index": 1379,
+    "ingredient": "Паста тахинная",
+    "pov_id": "372",
+    "vv_id": "5938"
+  },
+  {
+    "row_index": 1382,
+    "ingredient": "Отвар",
+    "pov_id": "584",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 1383,
+    "ingredient": "Питахайя",
+    "pov_id": "905",
+    "vv_id": "6561"
+  },
+  {
+    "row_index": 1386,
+    "ingredient": "Бекон",
+    "pov_id": "123",
+    "vv_id": "439"
+  },
+  {
+    "row_index": 1389,
+    "ingredient": "Индейка",
+    "pov_id": "422",
+    "vv_id": "2165"
+  },
+  {
+    "row_index": 1392,
+    "ingredient": "Хрен",
+    "pov_id": "405",
+    "vv_id": "2851"
+  },
+  {
+    "row_index": 1395,
+    "ingredient": "Шпинат",
+    "pov_id": "334",
+    "vv_id": "7789"
+  },
+  {
+    "row_index": 1398,
+    "ingredient": "Оливки зеленые",
+    "pov_id": "284",
+    "vv_id": "5684"
+  },
+  {
+    "row_index": 1401,
+    "ingredient": "Каштан",
+    "pov_id": "490",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 1402,
+    "ingredient": "Манго",
+    "pov_id": "544",
+    "vv_id": "4405"
+  },
+  {
+    "row_index": 1405,
+    "ingredient": "Масло сливочное",
+    "pov_id": "15",
+    "vv_id": "4577"
+  },
+  {
+    "row_index": 1408,
+    "ingredient": "Орешки",
+    "pov_id": "964",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1409,
+    "ingredient": "Лед",
+    "pov_id": "224",
+    "vv_id": "4056"
+  },
+  {
+    "row_index": 1412,
+    "ingredient": "Липаза",
+    "pov_id": "928",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 1413,
+    "ingredient": "Вода цветочная апельсиновая",
+    "pov_id": "489",
+    "vv_id": "10038"
+  },
+  {
+    "row_index": 1416,
+    "ingredient": "Кактус",
+    "pov_id": "808",
+    "vv_id": "4901"
+  },
+  {
+    "row_index": 1419,
+    "ingredient": "Каша",
+    "pov_id": "480",
+    "vv_id": "2471"
+  },
+  {
+    "row_index": 1422,
+    "ingredient": "Арбуз",
+    "pov_id": "607",
+    "vv_id": "77"
+  },
+  {
+    "row_index": 1425,
+    "ingredient": "Разрыхлитель",
+    "pov_id": "782",
+    "vv_id": "6998"
+  },
+  {
+    "row_index": 1428,
+    "ingredient": "Пралине",
+    "pov_id": "730",
+    "vv_id": "344"
+  },
+  {
+    "row_index": 1431,
+    "ingredient": "Стевия",
+    "pov_id": "750",
+    "vv_id": "6731"
+  },
+  {
+    "row_index": 1434,
+    "ingredient": "Калинджи",
+    "pov_id": "747",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 1435,
+    "ingredient": "Галета",
+    "pov_id": "862",
+    "vv_id": "1803"
+  },
+  {
+    "row_index": 1438,
+    "ingredient": "Редька дайкон",
+    "pov_id": "771",
+    "vv_id": "7005"
+  },
+  {
+    "row_index": 1441,
+    "ingredient": "Жмых фруктовый",
+    "pov_id": "859",
+    "vv_id": "1793"
+  },
+  {
+    "row_index": 1444,
+    "ingredient": "Джем абрикосовый",
+    "pov_id": "470",
+    "vv_id": "1416"
+  },
+  {
+    "row_index": 1447,
+    "ingredient": "Эскалоп",
+    "pov_id": "772",
+    "vv_id": "1460"
+  },
+  {
+    "row_index": 1450,
+    "ingredient": "Спагетти",
+    "pov_id": "332",
+    "vv_id": "232"
+  },
+  {
+    "row_index": 1451,
+    "ingredient": "Фундук",
+    "pov_id": "313",
+    "vv_id": "1802"
+  },
+  {
+    "row_index": 1454,
+    "ingredient": "Грибы консервированные",
+    "pov_id": "461",
+    "vv_id": "2027"
+  },
+  {
+    "row_index": 1457,
+    "ingredient": "Вода минеральная",
+    "pov_id": "135",
+    "vv_id": "9985"
+  },
+  {
+    "row_index": 1460,
+    "ingredient": "Финик",
+    "pov_id": "56",
+    "vv_id": "1636"
+  },
+  {
+    "row_index": 1463,
+    "ingredient": "Круассан",
+    "pov_id": "880",
+    "vv_id": "3796"
+  },
+  {
+    "row_index": 1466,
+    "ingredient": "Каркаде",
+    "pov_id": "659",
+    "vv_id": "5251"
+  },
+  {
+    "row_index": 1469,
+    "ingredient": "Семена льна",
+    "pov_id": "327",
+    "vv_id": "7428"
+  },
+  {
+    "row_index": 1472,
+    "ingredient": "Суп пакетный",
+    "pov_id": "832",
+    "vv_id": "8651"
+  },
+  {
+    "row_index": 1475,
+    "ingredient": "Лосось",
+    "pov_id": "233",
+    "vv_id": "4181"
+  },
+  {
+    "row_index": 1478,
+    "ingredient": "Кэроб",
+    "pov_id": "684",
+    "vv_id": "837"
+  },
+  {
+    "row_index": 1481,
+    "ingredient": "Момордика",
+    "pov_id": "923",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 1482,
+    "ingredient": "Бальзамик",
+    "pov_id": "149",
+    "vv_id": "261"
+  },
+  {
+    "row_index": 1483,
+    "ingredient": "Масло тыквенное",
+    "pov_id": "617",
+    "vv_id": "4593"
+  },
+  {
+    "row_index": 1486,
+    "ingredient": "Смесь порошковая",
+    "pov_id": "404",
+    "vv_id": "7934"
+  },
+  {
+    "row_index": 1489,
+    "ingredient": "Сироп клюквенный",
+    "pov_id": "889",
+    "vv_id": "5035"
+  },
+  {
+    "row_index": 1492,
+    "ingredient": "Мука миндальная",
+    "pov_id": "399",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 1495,
+    "ingredient": "Соя",
+    "pov_id": "281",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 1496,
+    "ingredient": "Мусс",
+    "pov_id": "742",
+    "vv_id": "5108"
+  },
+  {
+    "row_index": 1499,
+    "ingredient": "Артишок",
+    "pov_id": "445",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1500,
+    "ingredient": "Лук зеленый",
+    "pov_id": "6",
+    "vv_id": "4196"
+  },
+  {
+    "row_index": 1503,
+    "ingredient": "Гренки",
+    "pov_id": "699",
+    "vv_id": "2001"
+  },
+  {
+    "row_index": 1506,
+    "ingredient": "Крахмал",
+    "pov_id": "28",
+    "vv_id": "3673"
+  },
+  {
+    "row_index": 1509,
+    "ingredient": "Кукурузные палочки",
+    "pov_id": "423",
+    "vv_id": "5811"
+  },
+  {
+    "row_index": 1512,
+    "ingredient": "Хлопья гречневые",
+    "pov_id": "275",
+    "vv_id": "2802"
+  },
+  {
+    "row_index": 1515,
+    "ingredient": "Горбуша в масле",
+    "pov_id": "970",
+    "vv_id": "1873"
+  },
+  {
+    "row_index": 1518,
+    "ingredient": "Сироп шоколадный",
+    "pov_id": "823",
+    "vv_id": "726"
+  },
+  {
+    "row_index": 1521,
+    "ingredient": "Горчица",
+    "pov_id": "64",
+    "vv_id": "1897"
+  },
+  {
+    "row_index": 1524,
+    "ingredient": "Тесто дрожжевое",
+    "pov_id": "237",
+    "vv_id": "9161"
+  },
+  {
+    "row_index": 1527,
+    "ingredient": "Перец болгарский",
+    "pov_id": "46",
+    "vv_id": "6315"
+  },
+  {
+    "row_index": 1530,
+    "ingredient": "Дрожжи",
+    "pov_id": "151",
+    "vv_id": "1390"
+  },
+  {
+    "row_index": 1533,
+    "ingredient": "Филе куриное",
+    "pov_id": "164",
+    "vv_id": "1596"
+  },
+  {
+    "row_index": 1536,
+    "ingredient": "Рапаны",
+    "pov_id": "349",
+    "vv_id": "260"
+  },
+  {
+    "row_index": 1537,
+    "ingredient": "Апельсин",
+    "pov_id": "129",
+    "vv_id": "45"
+  },
+  {
+    "row_index": 1540,
+    "ingredient": "Горох",
+    "pov_id": "440",
+    "vv_id": "1906"
+  },
+  {
+    "row_index": 1543,
+    "ingredient": "Ростки",
+    "pov_id": "374",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1544,
+    "ingredient": "Пастила",
+    "pov_id": "413",
+    "vv_id": "5969"
+  },
+  {
+    "row_index": 1547,
+    "ingredient": "Морошка",
+    "pov_id": "844",
+    "vv_id": "7174"
+  },
+  {
+    "row_index": 1550,
+    "ingredient": "Паста перечная",
+    "pov_id": "517",
+    "vv_id": "5938"
+  },
+  {
+    "row_index": 1553,
+    "ingredient": "Крем",
+    "pov_id": "522",
+    "vv_id": "3690"
+  },
+  {
+    "row_index": 1556,
+    "ingredient": "Легкое говяжье",
+    "pov_id": "798",
+    "vv_id": "9158"
+  },
+  {
+    "row_index": 1559,
+    "ingredient": "Шпроты",
+    "pov_id": "236",
+    "vv_id": "7793"
+  },
+  {
+    "row_index": 1562,
+    "ingredient": "Пшеница",
+    "pov_id": "638",
+    "vv_id": "1384"
+  },
+  {
+    "row_index": 1565,
+    "ingredient": "Паста арахисовая",
+    "pov_id": "345",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1568,
+    "ingredient": "Булгур",
+    "pov_id": "530",
+    "vv_id": "748"
+  },
+  {
+    "row_index": 1571,
+    "ingredient": "Печень гусиная",
+    "pov_id": "558",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 1574,
+    "ingredient": "Лангуст",
+    "pov_id": "904",
+    "vv_id": "243"
+  },
+  {
+    "row_index": 1575,
+    "ingredient": "Улитки",
+    "pov_id": "796",
+    "vv_id": "3286"
+  },
+  {
+    "row_index": 1578,
+    "ingredient": "Рис воздушный",
+    "pov_id": "734",
+    "vv_id": "7072"
+  },
+  {
+    "row_index": 1581,
+    "ingredient": "Рис дикий",
+    "pov_id": "412",
+    "vv_id": "7028"
+  },
+  {
+    "row_index": 1584,
+    "ingredient": "Перец пепперони",
+    "pov_id": "561",
+    "vv_id": "6341"
+  },
+  {
+    "row_index": 1587,
+    "ingredient": "Малина",
+    "pov_id": "246",
+    "vv_id": "4376"
+  },
+  {
+    "row_index": 1590,
+    "ingredient": "вода",
+    "pov_id": "953",
+    "vv_id": "10036"
+  },
+  {
+    "row_index": 1593,
+    "ingredient": "Ликер",
+    "pov_id": "268",
+    "vv_id": "51"
+  },
+  {
+    "row_index": 1594,
+    "ingredient": "Раковые шейки",
+    "pov_id": "756",
+    "vv_id": "7558"
+  },
+  {
+    "row_index": 1597,
+    "ingredient": "Нога баранья",
+    "pov_id": "499",
+    "vv_id": "261"
+  },
+  {
+    "row_index": 1598,
+    "ingredient": "Тесто пельменное",
+    "pov_id": "420",
+    "vv_id": "9139"
+  },
+  {
+    "row_index": 1601,
+    "ingredient": "Вода газированная",
+    "pov_id": "565",
+    "vv_id": "10038"
+  },
+  {
+    "row_index": 1604,
+    "ingredient": "Печенье",
+    "pov_id": "90",
+    "vv_id": "6016"
+  },
+  {
+    "row_index": 1607,
+    "ingredient": "Молоко топленое",
+    "pov_id": "573",
+    "vv_id": "4861"
+  },
+  {
+    "row_index": 1610,
+    "ingredient": "Ямс",
+    "pov_id": "850",
+    "vv_id": "90"
+  },
+  {
+    "row_index": 1611,
+    "ingredient": "Масло пальмовое",
+    "pov_id": "907",
+    "vv_id": "4589"
+  },
+  {
+    "row_index": 1614,
+    "ingredient": "Соус томатный",
+    "pov_id": "442",
+    "vv_id": "8467"
+  },
+  {
+    "row_index": 1617,
+    "ingredient": "Панир",
+    "pov_id": "912",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 1618,
+    "ingredient": "Взбитые сливки",
+    "pov_id": "644",
+    "vv_id": "7866"
+  },
+  {
+    "row_index": 1621,
+    "ingredient": "Киви",
+    "pov_id": "283",
+    "vv_id": "2933"
+  },
+  {
+    "row_index": 1624,
+    "ingredient": "Орехи пекан",
+    "pov_id": "91",
+    "vv_id": "5734"
+  },
+  {
+    "row_index": 1627,
+    "ingredient": "Сок ягодный",
+    "pov_id": "534",
+    "vv_id": "8217"
+  },
+  {
+    "row_index": 1630,
+    "ingredient": "Сахар-песок",
+    "pov_id": null,
+    "vv_id": "7195"
+  },
+  {
+    "row_index": 1633,
+    "ingredient": "Окара",
+    "pov_id": "799",
+    "vv_id": "146"
+  },
+  {
+    "row_index": 1634,
+    "ingredient": "Смесь молочная",
+    "pov_id": "485",
+    "vv_id": "7934"
+  },
+  {
+    "row_index": 1637,
+    "ingredient": "Рябчик",
+    "pov_id": "568",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 1638,
+    "ingredient": "Лобстер",
+    "pov_id": "851",
+    "vv_id": "1"
+  },
+  {
+    "row_index": 1639,
+    "ingredient": "Крупа манная",
+    "pov_id": "130",
+    "vv_id": "3824"
+  },
+  {
+    "row_index": 1642,
+    "ingredient": "Капуста пекинская",
+    "pov_id": "108",
+    "vv_id": "2364"
+  },
+  {
+    "row_index": 1645,
+    "ingredient": "Черешня",
+    "pov_id": "305",
+    "vv_id": "1028"
+  },
+  {
+    "row_index": 1648,
+    "ingredient": "Цукаты",
+    "pov_id": "439",
+    "vv_id": "9410"
+  },
+  {
+    "row_index": 1651,
+    "ingredient": "Морской язык",
+    "pov_id": "524",
+    "vv_id": "3711"
+  },
+  {
+    "row_index": 1654,
+    "ingredient": "Тесто пресное",
+    "pov_id": "559",
+    "vv_id": "9139"
+  },
+  {
+    "row_index": 1657,
+    "ingredient": "Грудка",
+    "pov_id": "754",
+    "vv_id": "2063"
+  },
+  {
+    "row_index": 1660,
+    "ingredient": "Тартар",
+    "pov_id": "809",
+    "vv_id": "8462"
+  },
+  {
+    "row_index": 1663,
+    "ingredient": "Бобы тонка",
+    "pov_id": "836",
+    "vv_id": "672"
+  },
+  {
+    "row_index": 1666,
+    "ingredient": "Какао",
+    "pov_id": "31",
+    "vv_id": "2266"
+  },
+  {
+    "row_index": 1669,
+    "ingredient": "Барсук",
+    "pov_id": "903",
+    "vv_id": "77"
+  },
+  {
+    "row_index": 1670,
+    "ingredient": "Смалец",
+    "pov_id": "557",
+    "vv_id": "90"
+  },
+  {
+    "row_index": 1671,
+    "ingredient": "Жимолость",
+    "pov_id": "746",
+    "vv_id": "10441"
+  },
+  {
+    "row_index": 1674,
+    "ingredient": "Шрот",
+    "pov_id": "806",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1675,
+    "ingredient": "Папайя",
+    "pov_id": "606",
+    "vv_id": "5836"
+  },
+  {
+    "row_index": 1678,
+    "ingredient": "Кожа рыбная",
+    "pov_id": "330",
+    "vv_id": "243"
+  },
+  {
+    "row_index": 1679,
+    "ingredient": "Сок березовый",
+    "pov_id": "626",
+    "vv_id": "8199"
+  },
+  {
+    "row_index": 1682,
+    "ingredient": "Мартини",
+    "pov_id": "774",
+    "vv_id": "112"
+  },
+  {
+    "row_index": 1683,
+    "ingredient": "Заменитель сухого молока",
+    "pov_id": "800",
+    "vv_id": "140"
+  },
+  {
+    "row_index": 1686,
+    "ingredient": "Язык свиной",
+    "pov_id": "425",
+    "vv_id": "2398"
+  },
+  {
+    "row_index": 1689,
+    "ingredient": "Кус-кус",
+    "pov_id": "362",
+    "vv_id": "3928"
+  },
+  {
+    "row_index": 1692,
+    "ingredient": "Язык говяжий",
+    "pov_id": "289",
+    "vv_id": "10141"
+  },
+  {
+    "row_index": 1695,
+    "ingredient": "Крупа ячневая",
+    "pov_id": "705",
+    "vv_id": "3841"
+  },
+  {
+    "row_index": 1698,
+    "ingredient": "Цветки",
+    "pov_id": "441",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1699,
+    "ingredient": "Заправка",
+    "pov_id": "438",
+    "vv_id": "10321"
+  },
+  {
+    "row_index": 1702,
+    "ingredient": "Вермут",
+    "pov_id": "585",
+    "vv_id": "77"
+  },
+  {
+    "row_index": 1703,
+    "ingredient": "Печень свиная",
+    "pov_id": "265",
+    "vv_id": "5987"
+  },
+  {
+    "row_index": 1706,
+    "ingredient": "Чай в пакетиках",
+    "pov_id": "303",
+    "vv_id": "951"
+  },
+  {
+    "row_index": 1709,
+    "ingredient": "Шейка свиная",
+    "pov_id": "553",
+    "vv_id": "7585"
+  },
+  {
+    "row_index": 1712,
+    "ingredient": "Маслины",
+    "pov_id": "52",
+    "vv_id": "4498"
+  },
+  {
+    "row_index": 1715,
+    "ingredient": "Тесто заварное",
+    "pov_id": "780",
+    "vv_id": "9139"
+  },
+  {
+    "row_index": 1718,
+    "ingredient": "Фунчоза",
+    "pov_id": "398",
+    "vv_id": "9829"
+  },
+  {
+    "row_index": 1721,
+    "ingredient": "Зубатка",
+    "pov_id": "45",
+    "vv_id": "10459"
+  },
+  {
+    "row_index": 1724,
+    "ingredient": "Личи",
+    "pov_id": "656",
+    "vv_id": "4092"
+  },
+  {
+    "row_index": 1727,
+    "ingredient": "Шишки сосновые",
+    "pov_id": "914",
+    "vv_id": "9747"
+  },
+  {
+    "row_index": 1730,
+    "ingredient": "Хлопья овсяные",
+    "pov_id": "218",
+    "vv_id": "2821"
+  },
+  {
+    "row_index": 1733,
+    "ingredient": "Конфеты",
+    "pov_id": "297",
+    "vv_id": "3447"
+  },
+  {
+    "row_index": 1736,
+    "ingredient": "Кора дуба",
+    "pov_id": "614",
+    "vv_id": "5595"
+  },
+  {
+    "row_index": 1739,
+    "ingredient": "Кефир",
+    "pov_id": "93",
+    "vv_id": "2525"
+  },
+  {
+    "row_index": 1742,
+    "ingredient": "Окорок",
+    "pov_id": "360",
+    "vv_id": "5612"
+  },
+  {
+    "row_index": 1745,
+    "ingredient": "Сыр копченый",
+    "pov_id": "541",
+    "vv_id": "8757"
+  },
+  {
+    "row_index": 1748,
+    "ingredient": "Какао-бобы",
+    "pov_id": "824",
+    "vv_id": "2266"
+  },
+  {
+    "row_index": 1751,
+    "ingredient": "Анис",
+    "pov_id": "514",
+    "vv_id": "10069"
+  },
+  {
+    "row_index": 1754,
+    "ingredient": "Ванильный стручок",
+    "pov_id": "708",
+    "vv_id": "1447"
+  },
+  {
+    "row_index": 1757,
+    "ingredient": "Дыня",
+    "pov_id": "245",
+    "vv_id": "1406"
+  },
+  {
+    "row_index": 1760,
+    "ingredient": "Субпродукты",
+    "pov_id": "428",
+    "vv_id": "3"
+  },
+  {
+    "row_index": 1761,
+    "ingredient": "Сельдерей корневой",
+    "pov_id": "323",
+    "vv_id": "7403"
+  },
+  {
+    "row_index": 1764,
+    "ingredient": "Селедка соленая",
+    "pov_id": "868",
+    "vv_id": "8256"
+  },
+  {
+    "row_index": 1767,
+    "ingredient": "Хлеб",
+    "pov_id": "96",
+    "vv_id": "2731"
+  },
+  {
+    "row_index": 1770,
+    "ingredient": "Загуститель для сливок",
+    "pov_id": "523",
+    "vv_id": "9130"
+  },
+  {
+    "row_index": 1773,
+    "ingredient": "Аспирин",
+    "pov_id": "829",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 1774,
+    "ingredient": "Томаты вяленые",
+    "pov_id": "177",
+    "vv_id": "9253"
+  },
+  {
+    "row_index": 1777,
+    "ingredient": "Цикорий",
+    "pov_id": "698",
+    "vv_id": "9401"
+  },
+  {
+    "row_index": 1780,
+    "ingredient": "Петрушка",
+    "pov_id": "122",
+    "vv_id": "6377"
+  },
+  {
+    "row_index": 1783,
+    "ingredient": "Зверобой",
+    "pov_id": "789",
+    "vv_id": "78"
+  },
+  {
+    "row_index": 1784,
+    "ingredient": "Кислота лимонная",
+    "pov_id": "209",
+    "vv_id": "2931"
+  },
+  {
+    "row_index": 1787,
+    "ingredient": "Бамия",
+    "pov_id": "569",
+    "vv_id": "261"
+  },
+  {
+    "row_index": 1788,
+    "ingredient": "Лук-порей",
+    "pov_id": "167",
+    "vv_id": "4187"
+  },
+  {
+    "row_index": 1791,
+    "ingredient": "Мука пшеничная",
+    "pov_id": null,
+    "vv_id": "5092"
+  },
+  {
+    "row_index": 1794,
+    "ingredient": "Груша",
+    "pov_id": "89",
+    "vv_id": "2069"
+  },
+  {
+    "row_index": 1797,
+    "ingredient": "Зира",
+    "pov_id": "172",
+    "vv_id": "10450"
+  },
+  {
+    "row_index": 1800,
+    "ingredient": "Желудок индюшачий",
+    "pov_id": "874",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 1801,
+    "ingredient": "Капуста кольраби",
+    "pov_id": "277",
+    "vv_id": "2369"
+  },
+  {
+    "row_index": 1804,
+    "ingredient": "Мелисса",
+    "pov_id": "564",
+    "vv_id": "1010"
+  },
+  {
+    "row_index": 1807,
+    "ingredient": "Сырок творожный",
+    "pov_id": "641",
+    "vv_id": "9064"
+  },
+  {
+    "row_index": 1810,
+    "ingredient": "Палтус",
+    "pov_id": "602",
+    "vv_id": "5815"
+  },
+  {
+    "row_index": 1813,
+    "ingredient": "Орех мускатный",
+    "pov_id": "27",
+    "vv_id": "5101"
+  },
+  {
+    "row_index": 1816,
+    "ingredient": "Сыр творожный",
+    "pov_id": "220",
+    "vv_id": "8967"
+  },
+  {
+    "row_index": 1819,
+    "ingredient": "Ракушки",
+    "pov_id": "690",
+    "vv_id": "6972"
+  },
+  {
+    "row_index": 1822,
+    "ingredient": "Соевый соус",
+    "pov_id": "49",
+    "vv_id": "8452"
+  },
+  {
+    "row_index": 1825,
+    "ingredient": "Лист цветочный",
+    "pov_id": "486",
+    "vv_id": "4654"
+  },
+  {
+    "row_index": 1828,
+    "ingredient": "Вермишель",
+    "pov_id": "192",
+    "vv_id": "9834"
+  },
+  {
+    "row_index": 1831,
+    "ingredient": " и черные",
+    "pov_id": "239",
+    "vv_id": "5657"
+  },
+  {
+    "row_index": 1834,
+    "ingredient": "Сироп ванильный",
+    "pov_id": "572",
+    "vv_id": "1447"
+  },
+  {
+    "row_index": 1837,
+    "ingredient": "Лист древесный",
+    "pov_id": "744",
+    "vv_id": "4029"
+  },
+  {
+    "row_index": 1840,
+    "ingredient": "Вино розовое сухое",
+    "pov_id": "779",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 1843,
+    "ingredient": "Ацидофилин",
+    "pov_id": "944",
+    "vv_id": "139"
+  },
+  {
+    "row_index": 1846,
+    "ingredient": "Крабовые палочки",
+    "pov_id": "50",
+    "vv_id": "3664"
+  },
+  {
+    "row_index": 1849,
+    "ingredient": "Чай зеленый",
+    "pov_id": "646",
+    "vv_id": "984"
+  },
+  {
+    "row_index": 1852,
+    "ingredient": "Дорадо",
+    "pov_id": "725",
+    "vv_id": "1344"
+  },
+  {
+    "row_index": 1855,
+    "ingredient": "Шафран",
+    "pov_id": "184",
+    "vv_id": "7524"
+  },
+  {
+    "row_index": 1858,
+    "ingredient": "Мойва",
+    "pov_id": "616",
+    "vv_id": "5067"
+  },
+  {
+    "row_index": 1861,
+    "ingredient": "Хвоя",
+    "pov_id": "937",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1862,
+    "ingredient": "Семена горчицы",
+    "pov_id": "411",
+    "vv_id": "7428"
+  },
+  {
+    "row_index": 1865,
+    "ingredient": "Конкилье",
+    "pov_id": "934",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 1866,
+    "ingredient": "Сахар тростниковый",
+    "pov_id": "341",
+    "vv_id": "7208"
+  },
+  {
+    "row_index": 1869,
+    "ingredient": "Печень баранья",
+    "pov_id": "219",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 1872,
+    "ingredient": "Крупа гречневая",
+    "pov_id": "69",
+    "vv_id": "3814"
+  },
+  {
+    "row_index": 1875,
+    "ingredient": "Арахис",
+    "pov_id": "267",
+    "vv_id": "59"
+  },
+  {
+    "row_index": 1878,
+    "ingredient": "Трюфель",
+    "pov_id": "748",
+    "vv_id": "3447"
+  },
+  {
+    "row_index": 1881,
+    "ingredient": "Васаби",
+    "pov_id": "498",
+    "vv_id": "5650"
+  },
+  {
+    "row_index": 1884,
+    "ingredient": "Яблоко",
+    "pov_id": "67",
+    "vv_id": "10082"
+  },
+  {
+    "row_index": 1887,
+    "ingredient": "Кизил",
+    "pov_id": "827",
+    "vv_id": "6482"
+  },
+  {
+    "row_index": 1890,
+    "ingredient": "Перец болгарский желтый",
+    "pov_id": "310",
+    "vv_id": "6315"
+  },
+  {
+    "row_index": 1893,
+    "ingredient": "Кижуч",
+    "pov_id": "702",
+    "vv_id": "2945"
+  },
+  {
+    "row_index": 1896,
+    "ingredient": "Камбала",
+    "pov_id": "658",
+    "vv_id": "2307"
+  },
+  {
+    "row_index": 1899,
+    "ingredient": "Уксус",
+    "pov_id": "77",
+    "vv_id": "9609"
+  },
+  {
+    "row_index": 1902,
+    "ingredient": "Фрикадельки",
+    "pov_id": "331",
+    "vv_id": "1722"
+  },
+  {
+    "row_index": 1905,
+    "ingredient": "Масло шоколадное",
+    "pov_id": "592",
+    "vv_id": "10136"
+  },
+  {
+    "row_index": 1908,
+    "ingredient": "Огурец",
+    "pov_id": "55",
+    "vv_id": "1715"
+  },
+  {
+    "row_index": 1911,
+    "ingredient": "Рамбутан",
+    "pov_id": "945",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 1912,
+    "ingredient": "Чернила каракатицы",
+    "pov_id": "853",
+    "vv_id": "4303"
+  },
+  {
+    "row_index": 1915,
+    "ingredient": "Шоколад молочный",
+    "pov_id": "87",
+    "vv_id": "7721"
+  },
+  {
+    "row_index": 1918,
+    "ingredient": "Хвост",
+    "pov_id": "660",
+    "vv_id": "70"
+  },
+  {
+    "row_index": 1919,
+    "ingredient": "Гусь",
+    "pov_id": "507",
+    "vv_id": "2086"
+  },
+  {
+    "row_index": 1922,
+    "ingredient": "Сок апельсиновый",
+    "pov_id": "126",
+    "vv_id": "8200"
+  },
+  {
+    "row_index": 1925,
+    "ingredient": "Колбаса",
+    "pov_id": "273",
+    "vv_id": "3176"
+  },
+  {
+    "row_index": 1928,
+    "ingredient": "Сухой завтрак",
+    "pov_id": "550",
+    "vv_id": "1928"
+  },
+  {
+    "row_index": 1931,
+    "ingredient": "Тесто слоеное бездрожжевое",
+    "pov_id": "366",
+    "vv_id": "9158"
+  },
+  {
+    "row_index": 1934,
+    "ingredient": "Кинза",
+    "pov_id": "75",
+    "vv_id": "2909"
+  },
+  {
+    "row_index": 1937,
+    "ingredient": "Курица копченая",
+    "pov_id": "894",
+    "vv_id": "2054"
+  },
+  {
+    "row_index": 1940,
+    "ingredient": "Лайм",
+    "pov_id": "59",
+    "vv_id": "4033"
+  },
+  {
+    "row_index": 1943,
+    "ingredient": "Бульон",
+    "pov_id": "140",
+    "vv_id": "787"
+  },
+  {
+    "row_index": 1946,
+    "ingredient": "Соус ягодный",
+    "pov_id": "472",
+    "vv_id": "5047"
+  },
+  {
+    "row_index": 1949,
+    "ingredient": "Фасоль стручковая",
+    "pov_id": "185",
+    "vv_id": "1550"
+  },
+  {
+    "row_index": 1952,
+    "ingredient": "Дрожжи сухие",
+    "pov_id": "908",
+    "vv_id": "1389"
+  },
+  {
+    "row_index": 1955,
+    "ingredient": "Форель",
+    "pov_id": "234",
+    "vv_id": "1677"
+  },
+  {
+    "row_index": 1958,
+    "ingredient": "Минтай",
+    "pov_id": "574",
+    "vv_id": "4763"
+  },
+  {
+    "row_index": 1961,
+    "ingredient": "Лист капустный",
+    "pov_id": "613",
+    "vv_id": "4029"
+  },
+  {
+    "row_index": 1964,
+    "ingredient": "Профитроли",
+    "pov_id": "837",
+    "vv_id": "6858"
+  },
+  {
+    "row_index": 1967,
+    "ingredient": "Капуста белокочанная",
+    "pov_id": "163",
+    "vv_id": "2331"
+  },
+  {
+    "row_index": 1970,
+    "ingredient": "Ставрида",
+    "pov_id": "788",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 1971,
+    "ingredient": "Пиво темное",
+    "pov_id": "475",
+    "vv_id": "6638"
+  },
+  {
+    "row_index": 1974,
+    "ingredient": "Фенхель",
+    "pov_id": "545",
+    "vv_id": "1552"
+  },
+  {
+    "row_index": 1977,
+    "ingredient": "Водоросли",
+    "pov_id": "738",
+    "vv_id": "10042"
+  },
+  {
+    "row_index": 1980,
+    "ingredient": "Картофель",
+    "pov_id": "13",
+    "vv_id": "2414"
+  },
+  {
+    "row_index": 1983,
+    "ingredient": "Рыба",
+    "pov_id": "34",
+    "vv_id": "4596"
+  },
+  {
+    "row_index": 1986,
+    "ingredient": "Напиток овсяный",
+    "pov_id": "783",
+    "vv_id": "5413"
+  },
+  {
+    "row_index": 1989,
+    "ingredient": "Осьминог",
+    "pov_id": "652",
+    "vv_id": "5741"
+  },
+  {
+    "row_index": 1992,
+    "ingredient": "Барабулька",
+    "pov_id": "722",
+    "vv_id": "77"
+  },
+  {
+    "row_index": 1993,
+    "ingredient": "Соевые проростки",
+    "pov_id": "635",
+    "vv_id": "6864"
+  },
+  {
+    "row_index": 1996,
+    "ingredient": "Горошек зеленый",
+    "pov_id": "138",
+    "vv_id": "1912"
+  },
+  {
+    "row_index": 1999,
+    "ingredient": "Кофе натуральный",
+    "pov_id": "60",
+    "vv_id": "3029"
+  },
+  {
+    "row_index": 2002,
+    "ingredient": "Катык",
+    "pov_id": "735",
+    "vv_id": "2521"
+  },
+  {
+    "row_index": 2005,
+    "ingredient": "Сахар-рафинад",
+    "pov_id": "351",
+    "vv_id": "7204"
+  },
+  {
+    "row_index": 2008,
+    "ingredient": "Мука специальная",
+    "pov_id": "807",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 2011,
+    "ingredient": "Хмели-сунели",
+    "pov_id": "251",
+    "vv_id": "6817"
+  },
+  {
+    "row_index": 2014,
+    "ingredient": "Гранат",
+    "pov_id": "381",
+    "vv_id": "1965"
+  },
+  {
+    "row_index": 2017,
+    "ingredient": "Перец ямайский",
+    "pov_id": "709",
+    "vv_id": "6350"
+  },
+  {
+    "row_index": 2020,
+    "ingredient": "Лягушачьи лапки",
+    "pov_id": "778",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 2021,
+    "ingredient": "Колбаса вареная",
+    "pov_id": "922",
+    "vv_id": "3250"
+  },
+  {
+    "row_index": 2024,
+    "ingredient": "Фетаки",
+    "pov_id": "551",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 2025,
+    "ingredient": "Фарш индюшачий",
+    "pov_id": "116",
+    "vv_id": "1494"
+  },
+  {
+    "row_index": 2028,
+    "ingredient": "Мука конопляная",
+    "pov_id": "482",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 2031,
+    "ingredient": "Суповой набор",
+    "pov_id": "427",
+    "vv_id": "8652"
+  },
+  {
+    "row_index": 2034,
+    "ingredient": "Смородина красная",
+    "pov_id": "444",
+    "vv_id": "8053"
+  },
+  {
+    "row_index": 2037,
+    "ingredient": "Сироп смородиновый",
+    "pov_id": "943",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 2040,
+    "ingredient": "Сок лимона",
+    "pov_id": "68",
+    "vv_id": "8168"
+  },
+  {
+    "row_index": 2043,
+    "ingredient": "Херес",
+    "pov_id": "630",
+    "vv_id": "67"
+  },
+  {
+    "row_index": 2044,
+    "ingredient": "Творожная масса",
+    "pov_id": "294",
+    "vv_id": "4610"
+  },
+  {
+    "row_index": 2047,
+    "ingredient": "Шнитт-лук",
+    "pov_id": "673",
+    "vv_id": "4190"
+  },
+  {
+    "row_index": 2050,
+    "ingredient": "Сгущенка",
+    "pov_id": "814",
+    "vv_id": "7522"
+  },
+  {
+    "row_index": 2053,
+    "ingredient": "Сироп кокосовый",
+    "pov_id": "913",
+    "vv_id": "7189"
+  },
+  {
+    "row_index": 2056,
+    "ingredient": "Мацони",
+    "pov_id": "536",
+    "vv_id": "4616"
+  },
+  {
+    "row_index": 2059,
+    "ingredient": "Ириски",
+    "pov_id": "409",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 2060,
+    "ingredient": "Хлопья пшенные",
+    "pov_id": "555",
+    "vv_id": "2820"
+  },
+  {
+    "row_index": 2063,
+    "ingredient": "Крапива",
+    "pov_id": "487",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2064,
+    "ingredient": "Рожки",
+    "pov_id": "697",
+    "vv_id": "4323"
+  },
+  {
+    "row_index": 2067,
+    "ingredient": "Чеснок",
+    "pov_id": "3",
+    "vv_id": "1040"
+  },
+  {
+    "row_index": 2070,
+    "ingredient": "Порошок пекарский",
+    "pov_id": "476",
+    "vv_id": "2279"
+  },
+  {
+    "row_index": 2073,
+    "ingredient": "Бублик",
+    "pov_id": "801",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 2074,
+    "ingredient": "Заварной крем",
+    "pov_id": "950",
+    "vv_id": "3690"
+  },
+  {
+    "row_index": 2077,
+    "ingredient": "Персиковый йогурт",
+    "pov_id": "951",
+    "vv_id": "10165"
+  },
+  {
+    "row_index": 2080,
+    "ingredient": "Алоэ",
+    "pov_id": "810",
+    "vv_id": "3469"
+  },
+  {
+    "row_index": 2083,
+    "ingredient": "Спред",
+    "pov_id": "877",
+    "vv_id": "24"
+  },
+  {
+    "row_index": 2084,
+    "ingredient": "Соус",
+    "pov_id": "128",
+    "vv_id": "8445"
+  },
+  {
+    "row_index": 2087,
+    "ingredient": "Желтки",
+    "pov_id": "14",
+    "vv_id": "10124"
+  },
+  {
+    "row_index": 2090,
+    "ingredient": "Сунели",
+    "pov_id": "896",
+    "vv_id": "6908"
+  },
+  {
+    "row_index": 2093,
+    "ingredient": "Мука цельнозерновая",
+    "pov_id": "85",
+    "vv_id": "5086"
+  },
+  {
+    "row_index": 2096,
+    "ingredient": "Мюсли",
+    "pov_id": "664",
+    "vv_id": "5154"
+  },
+  {
+    "row_index": 2099,
+    "ingredient": "Пищевая добавка",
+    "pov_id": "906",
+    "vv_id": "8114"
+  },
+  {
+    "row_index": 2102,
+    "ingredient": "Филе индейки",
+    "pov_id": "963",
+    "vv_id": "1587"
+  },
+  {
+    "row_index": 2105,
+    "ingredient": "Портулак",
+    "pov_id": "839",
+    "vv_id": "135"
+  },
+  {
+    "row_index": 2106,
+    "ingredient": "Тилапия",
+    "pov_id": "618",
+    "vv_id": "9164"
+  },
+  {
+    "row_index": 2109,
+    "ingredient": "Крупа пшеничная",
+    "pov_id": "623",
+    "vv_id": "3837"
+  },
+  {
+    "row_index": 2112,
+    "ingredient": "Рассол",
+    "pov_id": "414",
+    "vv_id": "59"
+  },
+  {
+    "row_index": 2113,
+    "ingredient": "Желудок",
+    "pov_id": "642",
+    "vv_id": "43"
+  },
+  {
+    "row_index": 2114,
+    "ingredient": "Редис",
+    "pov_id": "137",
+    "vv_id": "7004"
+  },
+  {
+    "row_index": 2117,
+    "ingredient": "Вино игристое сухое",
+    "pov_id": "834",
+    "vv_id": "9883"
+  },
+  {
+    "row_index": 2120,
+    "ingredient": "Конгрио",
+    "pov_id": "871",
+    "vv_id": "3479"
+  },
+  {
+    "row_index": 2123,
+    "ingredient": "Маш",
+    "pov_id": "355",
+    "vv_id": "4492"
+  },
+  {
+    "row_index": 2126,
+    "ingredient": "Аммоний пищевой",
+    "pov_id": "718",
+    "vv_id": "4056"
+  },
+  {
+    "row_index": 2129,
+    "ingredient": "Урбеч",
+    "pov_id": "464",
+    "vv_id": "5942"
+  },
+  {
+    "row_index": 2132,
+    "ingredient": "Карри",
+    "pov_id": "41",
+    "vv_id": "2413"
+  },
+  {
+    "row_index": 2135,
+    "ingredient": "Пектин",
+    "pov_id": "531",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 2136,
+    "ingredient": "Пряник",
+    "pov_id": "622",
+    "vv_id": "6883"
+  },
+  {
+    "row_index": 2139,
+    "ingredient": "Ерш",
+    "pov_id": "429",
+    "vv_id": "84"
+  },
+  {
+    "row_index": 2140,
+    "ingredient": "Креветки",
+    "pov_id": "54",
+    "vv_id": "3741"
+  },
+  {
+    "row_index": 2143,
+    "ingredient": "Карась",
+    "pov_id": "682",
+    "vv_id": "146"
+  },
+  {
+    "row_index": 2144,
+    "ingredient": "Орехи бразильские",
+    "pov_id": "720",
+    "vv_id": "5736"
+  },
+  {
+    "row_index": 2147,
+    "ingredient": "Унаби",
+    "pov_id": "776",
+    "vv_id": "19"
+  },
+  {
+    "row_index": 2148,
+    "ingredient": "Жмых овощной",
+    "pov_id": "826",
+    "vv_id": "787"
+  },
+  {
+    "row_index": 2151,
+    "ingredient": "Алкоголь",
+    "pov_id": "286",
+    "vv_id": "88"
+  },
+  {
+    "row_index": 2152,
+    "ingredient": "Наршараб",
+    "pov_id": "532",
+    "vv_id": "8441"
+  },
+  {
+    "row_index": 2155,
+    "ingredient": "Грибы маринованные",
+    "pov_id": "921",
+    "vv_id": "2025"
+  },
+  {
+    "row_index": 2158,
+    "ingredient": "Нектарин",
+    "pov_id": "493",
+    "vv_id": "5537"
+  },
+  {
+    "row_index": 2161,
+    "ingredient": "Желатин",
+    "pov_id": "202",
+    "vv_id": "10404"
+  },
+  {
+    "row_index": 2164,
+    "ingredient": "Фрукты",
+    "pov_id": "314",
+    "vv_id": "4446"
+  },
+  {
+    "row_index": 2167,
+    "ingredient": "Виски",
+    "pov_id": "502",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2168,
+    "ingredient": "Яйцо куриное",
+    "pov_id": "4",
+    "vv_id": "10124"
+  },
+  {
+    "row_index": 2171,
+    "ingredient": "Лимон",
+    "pov_id": "111",
+    "vv_id": "1304"
+  },
+  {
+    "row_index": 2174,
+    "ingredient": "Соус-маринад",
+    "pov_id": "407",
+    "vv_id": "8427"
+  },
+  {
+    "row_index": 2177,
+    "ingredient": "Крыжовник",
+    "pov_id": "546",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2178,
+    "ingredient": "Салат",
+    "pov_id": "7",
+    "vv_id": "7220"
+  },
+  {
+    "row_index": 2181,
+    "ingredient": "Кокос",
+    "pov_id": "375",
+    "vv_id": "3083"
+  },
+  {
+    "row_index": 2184,
+    "ingredient": "Кожа куриная",
+    "pov_id": "426",
+    "vv_id": "9864"
+  },
+  {
+    "row_index": 2187,
+    "ingredient": "Брюква",
+    "pov_id": "603",
+    "vv_id": "79"
+  },
+  {
+    "row_index": 2188,
+    "ingredient": "Сухари",
+    "pov_id": "501",
+    "vv_id": "8547"
+  },
+  {
+    "row_index": 2191,
+    "ingredient": "Морепродукты",
+    "pov_id": "40",
+    "vv_id": "134"
+  },
+  {
+    "row_index": 2192,
+    "ingredient": "Тарталетка",
+    "pov_id": "520",
+    "vv_id": "9102"
+  },
+  {
+    "row_index": 2195,
+    "ingredient": "Крем фреш",
+    "pov_id": "580",
+    "vv_id": "84"
+  },
+  {
+    "row_index": 2198,
+    "ingredient": "Кедровый орех",
+    "pov_id": "967",
+    "vv_id": "5733"
+  },
+  {
+    "row_index": 2201,
+    "ingredient": "Порошок чесночный",
+    "pov_id": "121",
+    "vv_id": "2279"
+  },
+  {
+    "row_index": 2204,
+    "ingredient": "Саке",
+    "pov_id": "755",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2205,
+    "ingredient": "Буженина",
+    "pov_id": "608",
+    "vv_id": "824"
+  },
+  {
+    "row_index": 2208,
+    "ingredient": "Майонез легкий",
+    "pov_id": "935",
+    "vv_id": "4628"
+  },
+  {
+    "row_index": 2211,
+    "ingredient": "Лазанья",
+    "pov_id": "176",
+    "vv_id": "4279"
+  },
+  {
+    "row_index": 2214,
+    "ingredient": "Помидор соленый",
+    "pov_id": "791",
+    "vv_id": "6783"
+  },
+  {
+    "row_index": 2217,
+    "ingredient": "Паста шоколадная",
+    "pov_id": "509",
+    "vv_id": "1796"
+  },
+  {
+    "row_index": 2220,
+    "ingredient": "Щавель",
+    "pov_id": "136",
+    "vv_id": "7570"
+  },
+  {
+    "row_index": 2223,
+    "ingredient": "Изюм без косточек",
+    "pov_id": "971",
+    "vv_id": "1034"
+  },
+  {
+    "row_index": 2226,
+    "ingredient": "Помидор маринованный",
+    "pov_id": "436",
+    "vv_id": "6310"
+  },
+  {
+    "row_index": 2229,
+    "ingredient": "Каннеллони",
+    "pov_id": "590",
+    "vv_id": "261"
+  },
+  {
+    "row_index": 2230,
+    "ingredient": "Семолина",
+    "pov_id": "675",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 2231,
+    "ingredient": "Мука льняная",
+    "pov_id": "515",
+    "vv_id": "5083"
+  },
+  {
+    "row_index": 2234,
+    "ingredient": "Айва",
+    "pov_id": "203",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2237,
+    "ingredient": "Агар-агар",
+    "pov_id": "368",
+    "vv_id": "12"
+  },
+  {
+    "row_index": 2240,
+    "ingredient": "Огурец соленый",
+    "pov_id": "97",
+    "vv_id": "6783"
+  },
+  {
+    "row_index": 2243,
+    "ingredient": "Творог",
+    "pov_id": "142",
+    "vv_id": "9524"
+  },
+  {
+    "row_index": 2246,
+    "ingredient": "Лист лавровый",
+    "pov_id": "158",
+    "vv_id": "4029"
+  },
+  {
+    "row_index": 2249,
+    "ingredient": "Шалфей",
+    "pov_id": "153",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2250,
+    "ingredient": "Вымя",
+    "pov_id": "887",
+    "vv_id": "261"
+  },
+  {
+    "row_index": 2251,
+    "ingredient": "Лен",
+    "pov_id": "615",
+    "vv_id": "4068"
+  },
+  {
+    "row_index": 2254,
+    "ingredient": "Сода",
+    "pov_id": null,
+    "vv_id": "8114"
+  },
+  {
+    "row_index": 2257,
+    "ingredient": "Нутелла",
+    "pov_id": "694",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 2258,
+    "ingredient": "Перец чили",
+    "pov_id": "71",
+    "vv_id": "6332"
+  },
+  {
+    "row_index": 2261,
+    "ingredient": "Перец кайен",
+    "pov_id": "279",
+    "vv_id": "6341"
+  },
+  {
+    "row_index": 2264,
+    "ingredient": "Мука ржаная",
+    "pov_id": "212",
+    "vv_id": "5096"
+  },
+  {
+    "row_index": 2267,
+    "ingredient": "Сибас",
+    "pov_id": "786",
+    "vv_id": "7815"
+  },
+  {
+    "row_index": 2270,
+    "ingredient": "Грудка утиная",
+    "pov_id": "230",
+    "vv_id": "2063"
+  },
+  {
+    "row_index": 2273,
+    "ingredient": "Хлопья злаковые",
+    "pov_id": "446",
+    "vv_id": "2821"
+  },
+  {
+    "row_index": 2276,
+    "ingredient": "Сыр козий",
+    "pov_id": "325",
+    "vv_id": "8763"
+  },
+  {
+    "row_index": 2279,
+    "ingredient": "Кальвадос",
+    "pov_id": "840",
+    "vv_id": "146"
+  },
+  {
+    "row_index": 2280,
+    "ingredient": "Сало",
+    "pov_id": "42",
+    "vv_id": "7348"
+  },
+  {
+    "row_index": 2283,
+    "ingredient": "Печень кролика",
+    "pov_id": "855",
+    "vv_id": "5995"
+  },
+  {
+    "row_index": 2286,
+    "ingredient": "Ребра говяжьи",
+    "pov_id": "600",
+    "vv_id": "7446"
+  },
+  {
+    "row_index": 2289,
+    "ingredient": "Капуста савойская",
+    "pov_id": "563",
+    "vv_id": "2364"
+  },
+  {
+    "row_index": 2292,
+    "ingredient": "Кишки",
+    "pov_id": "554",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 2293,
+    "ingredient": "Сухари панировочные",
+    "pov_id": "120",
+    "vv_id": "8546"
+  },
+  {
+    "row_index": 2296,
+    "ingredient": "Печень трески",
+    "pov_id": "278",
+    "vv_id": "6007"
+  },
+  {
+    "row_index": 2299,
+    "ingredient": "Разрыхлитель для теста",
+    "pov_id": "815",
+    "vv_id": "6997"
+  },
+  {
+    "row_index": 2302,
+    "ingredient": "Фасоль красная консервированная",
+    "pov_id": "893",
+    "vv_id": "1536"
+  },
+  {
+    "row_index": 2305,
+    "ingredient": "Валериана",
+    "pov_id": "910",
+    "vv_id": "81"
+  },
+  {
+    "row_index": 2306,
+    "ingredient": "Цедра",
+    "pov_id": "960",
+    "vv_id": null
+  },
+  {
+    "row_index": 2307,
+    "ingredient": "Сироп глюкозы",
+    "pov_id": "344",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 2310,
+    "ingredient": "Закваска",
+    "pov_id": "86",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2311,
+    "ingredient": "Шоколад белый",
+    "pov_id": "207",
+    "vv_id": "7619"
+  },
+  {
+    "row_index": 2314,
+    "ingredient": "Стружка шоколадная",
+    "pov_id": "447",
+    "vv_id": "8533"
+  },
+  {
+    "row_index": 2317,
+    "ingredient": "Филе",
+    "pov_id": "503",
+    "vv_id": "5740"
+  },
+  {
+    "row_index": 2320,
+    "ingredient": "Мука черемуховая",
+    "pov_id": "562",
+    "vv_id": "5094"
+  },
+  {
+    "row_index": 2323,
+    "ingredient": "Консервированый зеленый горошек",
+    "pov_id": "816",
+    "vv_id": "1912"
+  },
+  {
+    "row_index": 2326,
+    "ingredient": "Кролик",
+    "pov_id": "491",
+    "vv_id": "6958"
+  },
+  {
+    "row_index": 2329,
+    "ingredient": "Шелковица",
+    "pov_id": "790",
+    "vv_id": "45"
+  },
+  {
+    "row_index": 2330,
+    "ingredient": "Томаты черри",
+    "pov_id": "114",
+    "vv_id": "9198"
+  },
+  {
+    "row_index": 2333,
+    "ingredient": "Соломка",
+    "pov_id": "609",
+    "vv_id": "4773"
+  },
+  {
+    "row_index": 2336,
+    "ingredient": "Томатная паста",
+    "pov_id": "240",
+    "vv_id": "5938"
+  },
+  {
+    "row_index": 2339,
+    "ingredient": "Чай белый",
+    "pov_id": "890",
+    "vv_id": "849"
+  },
+  {
+    "row_index": 2342,
+    "ingredient": "Сайда",
+    "pov_id": "831",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2343,
+    "ingredient": "Бадьян",
+    "pov_id": "256",
+    "vv_id": "256"
+  },
+  {
+    "row_index": 2344,
+    "ingredient": "Рулет",
+    "pov_id": "406",
+    "vv_id": "7125"
+  },
+  {
+    "row_index": 2347,
+    "ingredient": "Бедро куриное",
+    "pov_id": "106",
+    "vv_id": "421"
+  },
+  {
+    "row_index": 2350,
+    "ingredient": "Молоко миндальное",
+    "pov_id": "385",
+    "vv_id": "4862"
+  },
+  {
+    "row_index": 2353,
+    "ingredient": "Сельдь",
+    "pov_id": "336",
+    "vv_id": "7380"
+  },
+  {
+    "row_index": 2356,
+    "ingredient": "Капуста квашеная",
+    "pov_id": "525",
+    "vv_id": "2352"
+  },
+  {
+    "row_index": 2359,
+    "ingredient": "Томаты пассерованные",
+    "pov_id": "365",
+    "vv_id": "9208"
+  },
+  {
+    "row_index": 2362,
+    "ingredient": "Сахарная пудра",
+    "pov_id": "29",
+    "vv_id": "6922"
+  },
+  {
+    "row_index": 2365,
+    "ingredient": "Вино белое полусухое",
+    "pov_id": "37",
+    "vv_id": "10119"
+  },
+  {
+    "row_index": 2368,
+    "ingredient": "Грудинка",
+    "pov_id": "317",
+    "vv_id": "2053"
+  },
+  {
+    "row_index": 2371,
+    "ingredient": "Сахар кусковой",
+    "pov_id": "696",
+    "vv_id": "7209"
+  },
+  {
+    "row_index": 2374,
+    "ingredient": "Яблоко кисловатое",
+    "pov_id": "954",
+    "vv_id": "10089"
+  },
+  {
+    "row_index": 2377,
+    "ingredient": "Чечевица",
+    "pov_id": "195",
+    "vv_id": "1026"
+  },
+  {
+    "row_index": 2380,
+    "ingredient": "Ребра свиные",
+    "pov_id": "339",
+    "vv_id": "6999"
+  },
+  {
+    "row_index": 2383,
+    "ingredient": "Репа",
+    "pov_id": "319",
+    "vv_id": "7008"
+  },
+  {
+    "row_index": 2386,
+    "ingredient": "Сироп лимонный",
+    "pov_id": "649",
+    "vv_id": "2561"
+  },
+  {
+    "row_index": 2389,
+    "ingredient": "Баранина",
+    "pov_id": "170",
+    "vv_id": "264"
+  },
+  {
+    "row_index": 2392,
+    "ingredient": "Напиток кисломолочный",
+    "pov_id": "389",
+    "vv_id": "5337"
+  },
+  {
+    "row_index": 2395,
+    "ingredient": "Попкорн",
+    "pov_id": "842",
+    "vv_id": "6783"
+  },
+  {
+    "row_index": 2398,
+    "ingredient": "Печень утиная",
+    "pov_id": "900",
+    "vv_id": "5997"
+  },
+  {
+    "row_index": 2401,
+    "ingredient": "Сельдерей черешковый",
+    "pov_id": "197",
+    "vv_id": "7401"
+  },
+  {
+    "row_index": 2404,
+    "ingredient": "Окунь",
+    "pov_id": "463",
+    "vv_id": "5622"
+  },
+  {
+    "row_index": 2407,
+    "ingredient": "Кубик бульонный",
+    "pov_id": "548",
+    "vv_id": "82"
+  },
+  {
+    "row_index": 2408,
+    "ingredient": "Капуста китайская",
+    "pov_id": "451",
+    "vv_id": "2364"
+  },
+  {
+    "row_index": 2411,
+    "ingredient": "Паприка молотая",
+    "pov_id": "925",
+    "vv_id": "5839"
+  },
+  {
+    "row_index": 2414,
+    "ingredient": "Физалис",
+    "pov_id": "579",
+    "vv_id": "1659"
+  },
+  {
+    "row_index": 2417,
+    "ingredient": "Макаронные изделия",
+    "pov_id": "211",
+    "vv_id": "4348"
+  },
+  {
+    "row_index": 2420,
+    "ingredient": "Кляр",
+    "pov_id": "909",
+    "vv_id": "243"
+  },
+  {
+    "row_index": 2421,
+    "ingredient": "Хлопья кукурузные",
+    "pov_id": "350",
+    "vv_id": "2806"
+  },
+  {
+    "row_index": 2424,
+    "ingredient": "Ассорти овощное",
+    "pov_id": "320",
+    "vv_id": "129"
+  },
+  {
+    "row_index": 2427,
+    "ingredient": "Клюква",
+    "pov_id": "143",
+    "vv_id": "2967"
+  },
+  {
+    "row_index": 2430,
+    "ingredient": "Гриб морской",
+    "pov_id": "965",
+    "vv_id": "3711"
+  },
+  {
+    "row_index": 2433,
+    "ingredient": "Крупа перловая",
+    "pov_id": "156",
+    "vv_id": "3831"
+  },
+  {
+    "row_index": 2436,
+    "ingredient": "Свекла",
+    "pov_id": "62",
+    "vv_id": "8679"
+  },
+  {
+    "row_index": 2439,
+    "ingredient": "Бастурма",
+    "pov_id": "258",
+    "vv_id": "273"
+  },
+  {
+    "row_index": 2442,
+    "ingredient": "Сироп фруктовый",
+    "pov_id": "100",
+    "vv_id": "1793"
+  },
+  {
+    "row_index": 2445,
+    "ingredient": "Масло кедрового ореха",
+    "pov_id": "920",
+    "vv_id": "4510"
+  },
+  {
+    "row_index": 2448,
+    "ingredient": "Потроха",
+    "pov_id": "686",
+    "vv_id": "146"
+  },
+  {
+    "row_index": 2449,
+    "ingredient": "Чабрец",
+    "pov_id": "601",
+    "vv_id": "1905"
+  },
+  {
+    "row_index": 2452,
+    "ingredient": "Чай красный",
+    "pov_id": "812",
+    "vv_id": "937"
+  },
+  {
+    "row_index": 2455,
+    "ingredient": "Тосты",
+    "pov_id": "619",
+    "vv_id": "1"
+  },
+  {
+    "row_index": 2456,
+    "ingredient": "Вино рисовое",
+    "pov_id": "76",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 2459,
+    "ingredient": "Карбонад",
+    "pov_id": "665",
+    "vv_id": "2398"
+  },
+  {
+    "row_index": 2462,
+    "ingredient": "Крабовое мясо",
+    "pov_id": "629",
+    "vv_id": "3663"
+  },
+  {
+    "row_index": 2465,
+    "ingredient": "Шампиньоны",
+    "pov_id": "70",
+    "vv_id": "2043"
+  },
+  {
+    "row_index": 2468,
+    "ingredient": "Ром",
+    "pov_id": "175",
+    "vv_id": "90"
+  },
+  {
+    "row_index": 2469,
+    "ingredient": "Майонез",
+    "pov_id": "8",
+    "vv_id": "4627"
+  },
+  {
+    "row_index": 2472,
+    "ingredient": "Ткемали",
+    "pov_id": "311",
+    "vv_id": "8411"
+  },
+  {
+    "row_index": 2475,
+    "ingredient": "Безе",
+    "pov_id": "328",
+    "vv_id": "470"
+  },
+  {
+    "row_index": 2478,
+    "ingredient": "Кола",
+    "pov_id": "752",
+    "vv_id": "4112"
+  },
+  {
+    "row_index": 2481,
+    "ingredient": "Клетчатка",
+    "pov_id": "653",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2482,
+    "ingredient": "Грудка куриная",
+    "pov_id": "103",
+    "vv_id": "2058"
+  },
+  {
+    "row_index": 2485,
+    "ingredient": "Цыпленок",
+    "pov_id": "238",
+    "vv_id": "9415"
+  },
+  {
+    "row_index": 2488,
+    "ingredient": "Черника",
+    "pov_id": "154",
+    "vv_id": "1032"
+  },
+  {
+    "row_index": 2491,
+    "ingredient": "Удон",
+    "pov_id": "793",
+    "vv_id": "3986"
+  },
+  {
+    "row_index": 2494,
+    "ingredient": "Корж",
+    "pov_id": "262",
+    "vv_id": "3517"
+  },
+  {
+    "row_index": 2497,
+    "ingredient": "Гранола",
+    "pov_id": "761",
+    "vv_id": "1979"
+  },
+  {
+    "row_index": 2500,
+    "ingredient": "Кефаль",
+    "pov_id": "818",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 2501,
+    "ingredient": "Ребра",
+    "pov_id": "567",
+    "vv_id": "7446"
+  },
+  {
+    "row_index": 2504,
+    "ingredient": "Алыча",
+    "pov_id": "714",
+    "vv_id": "223"
+  },
+  {
+    "row_index": 2505,
+    "ingredient": "Спирт",
+    "pov_id": "597",
+    "vv_id": "137"
+  },
+  {
+    "row_index": 2506,
+    "ingredient": "Равиоли",
+    "pov_id": "919",
+    "vv_id": "6994"
+  },
+  {
+    "row_index": 2509,
+    "ingredient": "Капучино",
+    "pov_id": "383",
+    "vv_id": "5394"
+  },
+  {
+    "row_index": 2512,
+    "ingredient": "Порошок томатный",
+    "pov_id": "731",
+    "vv_id": "2620"
+  },
+  {
+    "row_index": 2515,
+    "ingredient": "Сироп абрикосовый",
+    "pov_id": "888",
+    "vv_id": "1416"
+  },
+  {
+    "row_index": 2518,
+    "ingredient": "Чернослив",
+    "pov_id": "105",
+    "vv_id": "1036"
+  },
+  {
+    "row_index": 2521,
+    "ingredient": "Сироп клубничный",
+    "pov_id": "727",
+    "vv_id": "1421"
+  },
+  {
+    "row_index": 2524,
+    "ingredient": "Сироп персиковый",
+    "pov_id": "538",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 2527,
+    "ingredient": "Сосиска",
+    "pov_id": "183",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2528,
+    "ingredient": "Можжевельник",
+    "pov_id": "396",
+    "vv_id": "50"
+  },
+  {
+    "row_index": 2529,
+    "ingredient": "Крупа овсяная",
+    "pov_id": "691",
+    "vv_id": "3841"
+  },
+  {
+    "row_index": 2532,
+    "ingredient": "Путассу",
+    "pov_id": "835",
+    "vv_id": "25"
+  },
+  {
+    "row_index": 2533,
+    "ingredient": "Мука кокосовая",
+    "pov_id": "775",
+    "vv_id": "5080"
+  },
+  {
+    "row_index": 2536,
+    "ingredient": "Глазурь",
+    "pov_id": "424",
+    "vv_id": "1840"
+  },
+  {
+    "row_index": 2539,
+    "ingredient": "Сок томатный",
+    "pov_id": "241",
+    "vv_id": "8209"
+  },
+  {
+    "row_index": 2542,
+    "ingredient": "Кофе растворимый",
+    "pov_id": "247",
+    "vv_id": "3047"
+  },
+  {
+    "row_index": 2545,
+    "ingredient": "Сычужный фермент",
+    "pov_id": "271",
+    "vv_id": "84"
+  },
+  {
+    "row_index": 2546,
+    "ingredient": "Вино розовое полусухое",
+    "pov_id": "594",
+    "vv_id": "9885"
+  },
+  {
+    "row_index": 2549,
+    "ingredient": "Сироп мятный",
+    "pov_id": "717",
+    "vv_id": "2954"
+  },
+  {
+    "row_index": 2552,
+    "ingredient": "Мука полбяная",
+    "pov_id": "811",
+    "vv_id": "5086"
+  },
+  {
+    "row_index": 2555,
+    "ingredient": "Сухофрукты",
+    "pov_id": "222",
+    "vv_id": "8565"
+  },
+  {
+    "row_index": 2558,
+    "ingredient": "Жир",
+    "pov_id": "347",
+    "vv_id": "5"
+  },
+  {
+    "row_index": 2559,
+    "ingredient": "Масло мятное",
+    "pov_id": "899",
+    "vv_id": "4521"
+  },
+  {
+    "row_index": 2562,
+    "ingredient": "Консервы рыбные",
+    "pov_id": "110",
+    "vv_id": "6265"
+  },
+  {
+    "row_index": 2565,
+    "ingredient": "Томаты сушеные",
+    "pov_id": "719",
+    "vv_id": "9208"
+  },
+  {
+    "row_index": 2568,
+    "ingredient": "Изюм",
+    "pov_id": "117",
+    "vv_id": "2255"
+  },
+  {
+    "row_index": 2571,
+    "ingredient": "Лимонная трава",
+    "pov_id": "373",
+    "vv_id": "2931"
+  },
+  {
+    "row_index": 2574,
+    "ingredient": "Пряности",
+    "pov_id": "453",
+    "vv_id": "997"
+  },
+  {
+    "row_index": 2577,
+    "ingredient": "Мясо криля",
+    "pov_id": "539",
+    "vv_id": "5123"
+  },
+  {
+    "row_index": 2580,
+    "ingredient": "Желудь",
+    "pov_id": "854",
+    "vv_id": "6461"
+  },
+  {
+    "row_index": 2583,
+    "ingredient": "Кунжутные семечки",
+    "pov_id": "966",
+    "vv_id": "7409"
+  },
+  {
+    "row_index": 2586,
+    "ingredient": "Сырок плавленый",
+    "pov_id": "144",
+    "vv_id": "8864"
+  },
+  {
+    "row_index": 2589,
+    "ingredient": "Черемша",
+    "pov_id": "437",
+    "vv_id": "84"
+  },
+  {
+    "row_index": 2590,
+    "ingredient": "Куриные окорочка",
+    "pov_id": "938",
+    "vv_id": "5597"
+  }
+]

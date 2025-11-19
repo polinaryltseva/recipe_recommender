@@ -55,7 +55,7 @@ from db import (
     log_ui_event,   # новый helper
 )
 
-from recsys.registry import get_recommender_for_user
+# from recsys.registry import get_recommender_for_user
 from recsys.features import build_user_context
 
 
@@ -65,7 +65,7 @@ from recsys.features import build_user_context
 init_db()
 
 # Настройка страницы Streamlit
-st.set_page_config(page_title="Мини-Лавка", layout="wide")
+st.set_page_config(page_title="Докупер", layout="wide")
 
 # Глобальный CSS для карточек и сетки
 st.markdown(
@@ -151,7 +151,7 @@ button[kind="secondary"] {
 )
 
 
-st.title("Лавка рекомендаций")
+st.title("Докупер: не тупи, докупи!")
 
 
 # ================== РАБОТА С СЕССИЕЙ ==================
@@ -276,6 +276,7 @@ def auth_block():
                 st.session_state.search_page = 1
                 st.sidebar.success("Регистрация успешна, вы вошли в систему.")
                 st.rerun()
+                return
 
     # Вход
     if do_login:
@@ -312,6 +313,9 @@ def auth_block():
                         uid,
                         uname,
                     )
+                    st.rerun()
+                    return
+
 
 
 auth_block()
@@ -331,12 +335,13 @@ from whoosh import scoring
 from whoosh.query import And, Or, FuzzyTerm, Term
 
 
-@st.cache_resource(show_spinner=False)
+@st.cache_resource(show_spinner="Идет индексирование поискового движка")
 def build_search_index():
     """
     Строит in-memory индекс Whoosh по всем товарам (name + description).
     Кэшируется на уровне приложения - строится один раз на запуск.
     """
+    logger.info("Eager loading of indexer initiated...")
     schema = Schema(
         pid=ID(stored=True, unique=True),
         name=TEXT(stored=True),
@@ -355,8 +360,23 @@ def build_search_index():
             description=(description or ""),
         )
     writer.commit()
+    logger.info("Indexer loaded and cached successfully")
     return idx
 
+@st.cache_resource(show_spinner="Идет первоначальная загрузка моделей рекомендаций...")
+def load_recsys_models():
+    """
+    Загружает и кэширует словарь с моделями рекомендаций при старте приложения.
+    Импорт происходит внутри, чтобы VLLM не инициализировался при каждом rerun.
+    """
+    logger.info("Eager loading of recommendation models initiated...")
+    from recsys.registry import models_dict
+    logger.info("Recommendation models loaded and cached successfully.")
+    return models_dict
+
+
+MODELS_DICT = load_recsys_models()
+SEARCH_IDX = build_search_index()
 
 def search_products_fuzzy(query: str, limit: int = 256):
     """
@@ -371,7 +391,7 @@ def search_products_fuzzy(query: str, limit: int = 256):
     if not query:
         return []
 
-    idx = build_search_index()
+    idx = SEARCH_IDX
 
     terms = [w for w in query.lower().split() if w.strip()]
     if not terms:
@@ -468,6 +488,7 @@ def render_product_card(
     description,
     user_id,
     session_id,
+    metadata=None,
     page_type: str = "catalog",
     source: str = "catalog",
     position: int | None = None,      # номер товара в выдаче/блоке
@@ -485,6 +506,17 @@ def render_product_card(
     БЕЗ дополнительных запросов к БД - используем только то,
     что уже передано (name, description, image_url, price).
     """
+    product_url = None
+    if metadata:
+        try:
+            if isinstance(metadata, str):
+                meta_dict = json.loads(metadata)
+            else:
+                meta_dict = metadata  # уже dict
+            product_url = meta_dict.get("url")
+        except Exception:
+            pass
+
     full_name = name or ""
     full_description = description or ""
     composition = ""  # состав в этом варианте не тянем (для перформанса)
@@ -545,8 +577,24 @@ def render_product_card(
     if len(short_name) > max_len:
         short_name = short_name[: max_len - 1] + "…"
 
+    # st.markdown(
+    #     f'<div class="product-name">{short_name}</div>',
+    #     unsafe_allow_html=True,
+    # )
+
+    short_name = full_name
+    max_len = 40
+    if len(short_name) > max_len:
+        short_name = short_name[: max_len - 1] + "…"
+
+    # Если есть URL — делаем ссылкой, иначе обычный текст
+    if product_url:
+        name_html = f'<a href="{product_url}" target="_blank" style="color: inherit; text-decoration: none;">{short_name}</a>'
+    else:
+        name_html = short_name
+
     st.markdown(
-        f'<div class="product-name">{short_name}</div>',
+        f'<div class="product-name">{name_html}</div>',
         unsafe_allow_html=True,
     )
 
@@ -582,7 +630,7 @@ def render_product_card(
 
 # ================== ОСНОВНОЙ ЛЕЙАУТ: ЛЕВО (ТАБЫ) + ПРАВО (РЕКОМЕНДАЦИИ) ==================
 
-main_col, recs_col = st.columns([4, 1])
+main_col, recs_col = st.columns([3, 2])
 
 with main_col:
     tab_catalog, tab_cart = st.tabs(["Каталог", "Корзина"])
@@ -746,14 +794,76 @@ with main_col:
                         if not prod:
                             continue
 
-                        _, name, price, category_id, image_url, description = prod
+                        # Поддерживаем старый и новый формат записи товара:
+                        # старый: (id, name, price, category_id, image_url, description)
+                        # новый: (id, name, price, category_id, image_url, description, metadata)
+                        pid_db, name, price, category_id, image_url, description = prod[:6]
+                        metadata = prod[6] if len(prod) > 6 else None  # ⇦ изменение (из дизайна)
 
-                        col_name, col_qty, col_btn = st.columns([3, 1, 1])
-                        with col_name:
-                            st.write(f"**{name}**")
+                        # Попытка получить product_url из metadata (если есть) — ⇦ изменение (из дизайна)
+                        product_url = None
+                        if metadata:
+                            try:
+                                meta_dict = json.loads(metadata) if isinstance(metadata, str) else metadata
+                                product_url = meta_dict.get("url")
+                            except Exception:
+                                product_url = None
+
+                        # Создаём строку с изображением и информацией — используем 4 колонки (img | info | qty | btn)
+                        col_img, col_info, col_qty, col_btn = st.columns([1, 2, 1, 1])  # ⇦ изменение (из дизайна)
+
+                        with col_img:
+                            if image_url:
+                                st.markdown(
+                                    f"""
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 8px;
+                                        overflow: hidden;
+                                        background-color: #ffffff;
+                                        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                                    ">
+                                        <img src="{image_url}" style="
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        ">
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+                            else:
+                                st.markdown(
+                                    """
+                                    <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 8px;
+                                        background-color: #f0f0f0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #888;
+                                        font-size: 0.8rem;
+                                    ">
+                                        Н/Д
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+
+                        with col_info:
+                            if product_url:
+                                name_html = f'<a href="{product_url}" target="_blank" style="color: inherit; text-decoration: none; font-weight: 600;">{name}</a>'
+                            else:
+                                name_html = f"<strong>{name}</strong>"
+                            st.markdown(name_html, unsafe_allow_html=True)
                             st.caption(f"{price:.2f} ₽ за единицу")
+
                         with col_qty:
                             st.write(f"x {qty}")
+
                         with col_btn:
                             if st.button("−", key=f"remove_{pid}"):
                                 if cart[pid] > 1:
@@ -807,7 +917,7 @@ with main_col:
                             )
 
                             st.session_state.cart = {}
-                            st.success(f"Заказ №{order_id} оформлен! 🎉 Лог записан.")
+                            st.success(f"Заказ №{order_id} оформлен!")
                         else:
                             st.warning("Не удалось сформировать заказ (корзина пустая).")
             except Exception:
@@ -835,8 +945,24 @@ with recs_col:
             ctx = build_user_context(user_id=user_id, cart_items=cart_product_ids)
 
             # 2. Берём нужную модель из реестра (с учётом A/B, если включишь)
+            
+            from recsys.ab_testing import choose_variant_for_user  # noqa
+            DEFAULT_EXPERIMENT = {
+                "name": "main_recs_ab",
+                "variants": {
+                    "ease_popular": 0.5,
+                    "llm_recs": 0.5,
+                    # "knn_recipes": 0
+                    # можно вывести 0.8 / 0.2 и т.п.
+                },
+            }
             try:
-                recsys_model = get_recommender_for_user(user_id)
+                experiment_name = DEFAULT_EXPERIMENT["name"]
+                variant = choose_variant_for_user(user_id, DEFAULT_EXPERIMENT)
+                logger.debug("Chosen recs variant: %s (type=%s)", variant, type(variant))
+                recsys_model = MODELS_DICT[variant]
+                print(recsys_model)
+                logger.debug("recsys_model: %s", getattr(recsys_model, "__class__", recsys_model))
             except Exception:
                 logger.exception(
                     "Ошибка при получении модели рекомендаций для user_id=%s",
@@ -844,6 +970,8 @@ with recs_col:
                 )
                 st.write("Не удалось загрузить модель рекомендаций.")
                 recsys_model = None
+                experiment_name = None
+                variant = None
 
             rec_ids = []
             if recsys_model is not None:
@@ -872,11 +1000,12 @@ with recs_col:
             # st.write("DEBUG user_id:", user_id)
             # st.write("DEBUG cart_product_ids:", cart_product_ids)
             # st.write("DEBUG rec_ids:", rec_ids)
-
+            if rec_ids:
+                rec_ids = list(dict.fromkeys(rec_ids))
             if not rec_ids:
                 st.write("Пока нет рекомендаций - нужно, чтобы накопились события.")
             else:
-                rec_products = get_products_by_ids(rec_ids)
+                rec_products = get_products_by_ids(rec_ids, preserve_order=True)
 
                 # LOG: проверим, все ли rec_ids есть в базе
                 db_product_ids = [p[0] for p in rec_products]
@@ -888,97 +1017,191 @@ with recs_col:
                         list(missing),
                     )
 
-                # один request_id на весь показ набора рекомендаций
-                rec_request_id = uuid.uuid4().hex
+                # ---- НОВОВВЕДЕНИЕ ДЛЯ ДИЗАЙНА: устойчивый request_id на набор рекомендаций ----
+                # Создаём уникальный ключ корзины для сравнения (стабильная строка)
+                current_cart_key = str(sorted(map(str, cart_product_ids)))
 
-                for pos, (pid, name, price, category_id, image_url, description) in enumerate(rec_products, start=1):
-                    with st.container():
-                        st.markdown('<div class="product-card">', unsafe_allow_html=True)
+                # Если корзина изменилась — пересоздаём request_id, иначе используем предыдущий
+                if "last_cart_key" not in st.session_state:
+                    st.session_state.last_cart_key = current_cart_key
+                    st.session_state.current_rec_request_id = uuid.uuid4().hex
+                else:
+                    if st.session_state.last_cart_key != current_cart_key:
+                        st.session_state.last_cart_key = current_cart_key
+                        st.session_state.current_rec_request_id = uuid.uuid4().hex
+                        # опционально: можно сбрасывать связанные состояния лайков/дизлайков
 
-                        # Картинка товара
-                        if image_url:
-                            st.markdown(
-                                f"""
-                                <div class="product-media">
-                                    <img src="{image_url}" alt="{name}">
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
-                        else:
-                            st.markdown(
-                                """
-                                <div class="product-media">
-                                    <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;">
-                                        Нет изображения
-                                    </div>
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
+                rec_request_id = st.session_state.current_rec_request_id
+                # --------------------------------------------------------------------------------
 
-                        # Название (обрезаем до ~2 строк)
-                        short_name = name[:38] + "…" if len(name or "") > 40 else (name or "")
-                        st.markdown(
-                            f'<div class="product-name">{short_name}</div>',
-                            unsafe_allow_html=True,
-                        )
+                # --- 👇👇👇 КНОПКИ ЛАЙК/ДИЗЛАЙК ДЛЯ ВСЕГО БЛОКА — ТЕПЕРЬ СВЕРХУ (из второй версии) ---
+                st.markdown("#### Оцените рекомендации")
+                like_key = f"block_like_{rec_request_id}"
+                dislike_key = f"block_dislike_{rec_request_id}"
 
-                        # Цена
-                        st.markdown(
-                            f'<div class="product-price">{price:.2f} ₽</div>',
-                            unsafe_allow_html=True,
-                        )
+                if like_key not in st.session_state:
+                    st.session_state[like_key] = False
+                if dislike_key not in st.session_state:
+                    st.session_state[dislike_key] = False
 
-                        # Логируем показ рекомендации с её позицией
-                        log_ui_event(
-                            user_id=user_id,
-                            session_id=session_id,
-                            event_type="rec_impression",
-                            page_type="recs_sidebar",
-                            source="recs",
-                            item_id=pid,
-                            position=pos,
-                            request_id=rec_request_id,
-                            cart=st.session_state.cart,
-                        )
+                if st.session_state[like_key]:
+                    st.success("👍 Спасибо за вашу оценку!")
+                elif st.session_state[dislike_key]:
+                    st.error("👎 Спасибо за вашу оценку!")
+                else:
+                    # Показываем кнопки, только если ещё не оценили
+                    col_like, col_dislike = st.columns(2)
 
-                        # LOG: дополнительно можно писать это и в тех.лог (если хочешь там видеть показы)
-                        logger.debug(
-                            "Rec impression: user_id=%s, item_id=%s, position=%s, request_id=%s",
-                            user_id,
-                            pid,
-                            pos,
-                            rec_request_id,
-                        )
-
-                        # Кнопка "В корзину"
-                        if st.button("В корзину", key=f"minirec_add_{pid}"):
-                            st.session_state.cart[pid] = st.session_state.cart.get(pid, 0) + 1
-
-                            # Логируем клик по рекомендации
+                    with col_like:
+                        if st.button(
+                                "👍",
+                                key=f"btn_block_like_{rec_request_id}",
+                                help="Нравится этот блок рекомендаций?",
+                                use_container_width=True,
+                        ):
                             log_ui_event(
                                 user_id=user_id,
                                 session_id=session_id,
-                                event_type="rec_click",
+                                event_type="rec_block_like",
+                                page_type="recs_sidebar",
+                                source="recs",
+                                item_id=None,
+                                position=None,
+                                request_id=rec_request_id,
+                                experiment_key=experiment_name,
+                                variant=variant,
+                                cart=st.session_state.cart,
+                            )
+                            logger.info(
+                                "Rec block LIKE: user_id=%s, request_id=%s",
+                                user_id,
+                                rec_request_id,
+                            )
+                            st.session_state[like_key] = True
+                            st.session_state[dislike_key] = False
+                            st.rerun()
+
+                    with col_dislike:
+                        if st.button(
+                                "👎",
+                                key=f"btn_block_dislike_{rec_request_id}",
+                                help="Эти рекомендации не релевантны?",
+                                use_container_width=True,
+                        ):
+                            log_ui_event(
+                                user_id=user_id,
+                                session_id=session_id,
+                                event_type="rec_block_dislike",
+                                page_type="recs_sidebar",
+                                source="recs",
+                                item_id=None,
+                                position=None,
+                                request_id=rec_request_id,
+                                experiment_key=experiment_name,
+                                variant=variant,
+                                cart=st.session_state.cart,
+                            )
+                            logger.info(
+                                "Rec block DISLIKE: user_id=%s, request_id=%s",
+                                user_id,
+                                rec_request_id,
+                            )
+                            st.session_state[dislike_key] = True
+                            st.session_state[like_key] = False
+                            st.rerun()
+
+                st.markdown("---")  # разделитель между кнопками и товарами
+
+                # --- Теперь отрисовываем сами рекомендации ---
+                # Учитываем, что rec_products может содержать доп. metadata (как во второй версии)
+                rec_cols = st.columns(2)
+
+                for pos, product in enumerate(rec_products, start=1):
+                    pid, name, price, category_id, image_url, description = product
+                    col_idx = (pos - 1) % 2  # чередуем между 0 и 1
+                    with rec_cols[col_idx]:
+                        with st.container():
+                            st.markdown('<div class="product-card">', unsafe_allow_html=True)
+
+                            # Картинка товара
+                            if image_url:
+                                st.markdown(
+                                    f"""
+                                    <div class="product-media">
+                                        <img src="{image_url}" alt="{name}">
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+                            else:
+                                st.markdown(
+                                    """
+                                    <div class="product-media">
+                                        <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;">
+                                            Нет изображения
+                                        </div>
+                                    </div>
+                                    """,
+                                    unsafe_allow_html=True,
+                                )
+
+                            # Название
+                            short_name = name[:38] + "…" if len(name or "") > 40 else (name or "")
+                            st.markdown(
+                                f'<div class="product-name">{short_name}</div>',
+                                unsafe_allow_html=True,
+                            )
+
+                            # Цена
+                            st.markdown(
+                                f'<div class="product-price">{price:.2f} ₽</div>',
+                                unsafe_allow_html=True,
+                            )
+
+                            # Лог показа
+                            log_ui_event(
+                                user_id=user_id,
+                                session_id=session_id,
+                                event_type="rec_impression",
                                 page_type="recs_sidebar",
                                 source="recs",
                                 item_id=pid,
                                 position=pos,
                                 request_id=rec_request_id,
+                                experiment_key=experiment_name,
+                                variant=variant,
                                 cart=st.session_state.cart,
                             )
 
-                            # LOG: тех.лог про клик
-                            logger.info(
-                                "Rec click: user_id=%s, item_id=%s, position=%s, request_id=%s",
-                                user_id,
-                                pid,
-                                pos,
-                                rec_request_id,
+                            logger.debug(
+                                "Rec impression: user_id=%s, item_id=%s, position=%s, request_id=%s",
+                                user_id, pid, pos, rec_request_id,
                             )
 
-                            st.session_state.show_add_toast = True
-                            st.rerun()
+                            # Кнопка "В корзину"
+                            if st.button("В корзину", key=f"minirec_add_{pid}"):
+                                st.session_state.cart[pid] = st.session_state.cart.get(pid, 0) + 1
 
-                        st.markdown("</div>", unsafe_allow_html=True)
+                                log_ui_event(
+                                    user_id=user_id,
+                                    session_id=session_id,
+                                    event_type="rec_click",
+                                    page_type="recs_sidebar",
+                                    source="recs",
+                                    item_id=pid,
+                                    position=pos,
+                                    request_id=rec_request_id,
+                                    experiment_key=experiment_name,
+                                    variant=variant,
+                                    cart=st.session_state.cart,
+                                )
+
+                                logger.info(
+                                    "Rec click: user_id=%s, item_id=%s, position=%s, request_id=%s",
+                                    user_id, pid, pos, rec_request_id,
+                                )
+
+                                st.session_state.show_add_toast = True
+                                st.rerun()
+
+                            st.markdown("</div>", unsafe_allow_html=True)
