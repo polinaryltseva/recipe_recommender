@@ -142,7 +142,7 @@ def init_db():
             id             INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id        INTEGER NOT NULL,
             session_id     TEXT,
-            event_time     DATETIME DEFAULT CURRENT_TIMESTAMP,
+            event_time     DATETIME DEFAULT (STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')),
             event_type     TEXT NOT NULL,
             item_id        INTEGER,
             page_type      TEXT,
